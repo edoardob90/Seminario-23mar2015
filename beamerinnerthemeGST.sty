@@ -1,0 +1,128 @@
+% Copyright 2007 by Till Tantau
+%
+% This file may be distributed and/or modified
+%
+% 1. under the LaTeX Project Public License and/or
+% 2. under the GNU Public License.
+%
+% See the file doc/licenses/LICENSE for more details.
+
+\ProvidesPackageRCS $Header: /cvsroot/latex-beamer/latex-beamer/themes/inner/beamerinnerthemerounded.sty,v 1.5 2007/01/28 20:48:30 tantau Exp $
+
+
+\DeclareOptionBeamer{shadow}[true]{\def\beamer@themerounded@shadow{#1}}
+\ExecuteOptionsBeamer{shadow=false}
+\ProcessOptionsBeamer
+
+\mode<presentation>
+
+\defbeamertemplate*{title page}{kaiser1}[1][]
+{
+%  \vbox{}
+  \vfill
+  \leavevmode%
+    \hspace*{-0.032\paperwidth}
+    \leavevmode
+    \begin{beamercolorbox}[wd=.95\paperwidth,dp=1.125ex,sep=8pt,center,leftskip=0.1\paperwidth plus1fill,#1]{title}
+      \usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle\par%
+      \ifx\insertsubtitle\@empty%
+      \else%
+        \vskip0.25em%
+        {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}%
+      \fi%     
+    \end{beamercolorbox}%
+    \hspace*{0.045\paperwidth}
+    \begin{beamercolorbox}[wd=.052\paperwidth,ht=3.5ex,dp=1.125ex,#1]{section in head/foot}
+    \end{beamercolorbox}
+    \vskip-1.5pt
+    \hspace*{0.05\paperwidth}
+    \begin{beamercolorbox}[wd=0.95\paperwidth,ht=1.5ex,#1]{section in head/foot}
+    \end{beamercolorbox}
+    \vskip1em\par
+    \begin{beamercolorbox}[sep=8pt,center,#1]{author}
+      \usebeamerfont{author}\insertauthor
+    \end{beamercolorbox}
+    \begin{beamercolorbox}[sep=8pt,center,#1]{institute}
+      \usebeamerfont{institute}\insertinstitute
+    \end{beamercolorbox}
+    \begin{beamercolorbox}[sep=8pt,center,#1]{date}
+      \usebeamerfont{date}\insertdate
+    \end{beamercolorbox}\vskip0.5em
+    {\usebeamercolor[fg]{titlegraphic}\inserttitlegraphic\par}
+  \vfill
+}
+
+\defbeamertemplate*{title page}{kaiser2}[1][]
+{
+%  \vbox{}
+  \vfill
+    \hspace*{-0.0442\paperwidth}
+    \leavevmode
+    \begin{beamercolorbox}[wd=.93\paperwidth,ht=.55ex,#1]{title}
+    \end{beamercolorbox}
+    \vskip-1.0em
+    \hspace*{-0.0742\paperwidth}
+    \begin{beamercolorbox}[wd=.87\paperwidth,ht=.55ex,#1]{section in head/foot}
+    \end{beamercolorbox}
+      \vskip0.55em
+      \usebeamerfont{title}{\usebeamercolor[bg]{section in head/foot}\centering\inserttitle\par}%
+      \ifx\insertsubtitle\@empty%
+      \else%
+        \vskip0.25em%
+        {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}%
+      \fi%     
+    \hspace*{0.12\paperwidth}
+    \begin{beamercolorbox}[wd=0.792\paperwidth,ht=.4ex,#1]{palette primary}
+    \end{beamercolorbox}
+    \vskip-1.2em
+    \hspace*{0.02\paperwidth}
+    \begin{beamercolorbox}[wd=0.94\paperwidth,ht=.4ex,#1]{section in head/foot}
+    \end{beamercolorbox}
+    \vskip-1.18em
+    \hspace*{0.05\paperwidth}
+    \begin{beamercolorbox}[wd=0.88\paperwidth,ht=.4ex,#1]{palette secondary}
+    \end{beamercolorbox}
+    \vskip1em\par
+    \begin{beamercolorbox}[sep=8pt,center,#1]{author}
+      \usebeamerfont{author}\insertauthor
+    \end{beamercolorbox}
+    \begin{beamercolorbox}[sep=8pt,center,#1]{institute}
+      \usebeamerfont{institute}\insertinstitute
+    \end{beamercolorbox}
+    \begin{beamercolorbox}[sep=8pt,center,#1]{date}
+      \usebeamerfont{date}\insertdate
+    \end{beamercolorbox}\vskip0.5em
+    {\usebeamercolor[fg]{titlegraphic}\inserttitlegraphic\par}
+  \vfill
+}
+
+\defbeamertemplate*{frametitle}{kaiser2}[1][]
+{
+  \usebeamerfont{frametitle}{\usebeamercolor[bg]{section in head/foot}\insertframetitle\par}%
+  \ifx\insertsubtitle\@empty%
+  \else%
+    \vskip0.25em%
+    {\usebeamerfont{framesubtitle}\usebeamercolor[fg]{subtitle}\insertsubframetitle\par}%
+  \fi%
+  \hspace*{0.035\paperwidth}\begin{beamercolorbox}[wd=0.93\paperwidth,ht=.3ex,#1]{title}
+  \end{beamercolorbox}
+}
+
+%%% COMBINAZIONI %%%
+% - titlepage ---> kaiser1; frametitle ---> default
+% - titlepage ---> kaiser2; frametitle ---> kaiser2
+%%%%%%%%%%%%%%%%%%%%
+
+\setbeamertemplate{blocks}[rounded][shadow=\beamer@themerounded@shadow]
+\setbeamertemplate{items}[ball]
+\setbeamertemplate{sections/subsections in toc}[ball]
+\setbeamertemplate{title page}[kaiser2][colsep=-4bp,shadow=\beamer@themerounded@shadow]
+\setbeamertemplate{frametitle}[kaiser2]
+\setbeamertemplate{part page}[default][colsep=-4bp,rounded=true,shadow=\beamer@themerounded@shadow]
+  
+\mode<all>
+
+%%% Local Variables: 
+%%% TeX-master: "~/texmf/tex/latex/beamer/test/test.tex"
+%%% End: 
+

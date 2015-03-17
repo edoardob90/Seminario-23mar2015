@@ -1,0 +1,46 @@
+\DeclareOptionBeamer{compress}{\beamer@compressfalse}
+\ProcessOptionsBeamer
+
+\mode<presentation>
+
+\usepackage{pgfcomp-version-0-65}
+\usepackage{color}
+
+\useoutertheme[footline=authorinstitute]{GST}
+\useinnertheme[]{GST}
+\usecolortheme{whale}
+\usefonttheme{default}
+
+%\definecolor{themecolor}{RGB}{252,209,22} % yellow
+%\definecolor{themecolor}{RGB}{255,153,63} % orange
+%\definecolor{themecolor}{RGB}{224,7,71} % red
+%\definecolor{themecolor}{RGB}{191,147,204} % violet 
+%\definecolor{themecolor}{RGB}{0,181,214} % cyan
+\definecolor{themecolor}{rgb}{0.137,0.466,0.741} % blue
+%\definecolor{themecolor}{RGB}{0,158,160} % blue-green
+%\definecolor{themecolor}{RGB}{0,201,147} % green 
+%\definecolor{themecolor}{RGB}{132,53,17} % brown
+%\definecolor{themecolor}{RGB}{150,147,142} % gray
+
+%%\definecolor{themecolor}{RGB}{5,64,140}
+%%\definecolor{themecolor1}{RGB}{0,35,71}
+%%\definecolor{themecolor2}{RGB}{5,64,140}
+\definecolor{bluetitle}{rgb}{0.137,0.366,0.541}
+\definecolor{backg}{rgb}{1,1,1}
+
+%\setbeamercolor*{palette quinary}{use=structure,fg=white,bg=structure.fg!70!white}
+\setbeamercolor{structure}{fg=themecolor}
+%\setbeamercolor{titlelike}{parent=structure}
+%\setbeamercolor{frametitle}{parent=structure}
+\setbeamercolor{title}{fg=backg}
+\setbeamercolor{item}{fg=themecolor}
+%\setbeamercolor{item}{fg=bluetitle}
+
+\setbeamerfont{title}{size=\LARGE}
+\setbeamerfont{frametitle}{size=\Large}
+\setbeamerfont{author}{size=\large}
+\setbeamerfont{date}{size=\large}
+
+\mode
+<all>
+

@@ -1,0 +1,149 @@
+%****************************************************************************************************
+% PACCHETTI
+%****************************************************************************************************
+% Tema principale
+\usetheme{Mainz}
+
+\usepackage[english,italian]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{beamerfoils}
+\usepackage{array}
+\usepackage{mathrsfs}
+\usepackage{tikz}  %--------------------------------------------- disegnini
+\usepackage{booktabs}  %----------------------------------------- tabelle
+\usepackage{color}  %-------------------------------------------- colori
+\usepackage{colortbl}  %----------------------------------------- tabelle colorate    
+\usepackage[version=3]{mhchem}  %-------------------------------- formule chimiche 
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{cancel}
+\usepackage[labelformat=empty,labelsep=none,skip=1pt]{caption}
+\usepackage[per-mode=symbol]{siunitx}
+\usepackage{relsize,xspace}
+\usetikzlibrary{shapes,arrows,shadows,mindmap,trees,calc}
+
+%****************************************************************************************************
+
+\setbeamercovered{dynamic}
+
+\def\arrowd{
+  (10.75:1.1) -- (6.5:1) arc (6.25:120:1) [rounded corners=0.5] --
+  (120:0.9) [rounded corners=1] -- (130:1.1) [rounded corners=0.5] --
+  (120:1.3) [sharp corners] -- (120:1.2) arc (120:5.25:1.2)
+  [rounded corners=1] -- (10.75:1.1) -- (6.5:1) -- cycle
+}
+
+\tikzset{
+  ashadow/.style={opacity=.25, shadow xshift=0.07, shadow yshift=-0.07},
+}
+
+
+%****************************************************************************************************
+% COLORI e STILI di TESTO
+\definecolor{greendark}{RGB}{0,178,140}
+\definecolor{bluegreen}{cmyk}{0.9,0.0,0.35,0.2}
+\definecolor{darkblue}{rgb}{0.2,0.2,0.65}
+%\newcommand{\cit}{\scriptsize\color{bluegreen}}             % citazioni
+\newcommand{\cit}{\scriptsize\color{themecolor!80!green}}             % citazioni
+\newcommand{\tbtit}{\bf\color{themecolor!75!black}} % titoli nelle tabelle
+\newcommand{\ev}{\color{themecolor}\bf}
+\renewcommand{\CancelColor}{\color{red}}
+%****************************************************************************************************
+
+
+%****************************************************************************************************
+% TABELLE
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\setlength{\aboverulesep}{0pt}
+\setlength{\belowrulesep}{0pt}
+\setlength{\extrarowheight}{.75ex}
+\arrayrulecolor{themecolor!75!black}
+
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+%****************************************************************************************************
+
+\pgfdeclarelayer{background}
+\pgfdeclarelayer{foreground}
+\pgfsetlayers{background,main,foreground}
+
+
+%****************************************************************************************************
+% ORBITALI
+%****************************************************************************************************
+
+% For black & white suggestions are black!95 for the electron
+% and a white background, or a simple shade for the orbitals.
+\colorlet{electron}{themecolor!75}
+\tikzset{orbital/.style={thick,draw=themecolor,fill opacity=.60}}
+% Styles for orbitals with 0, 1 and 2 atoms respectively.
+\tikzset{orbital 0/.style={orbital,fill=themecolor!25}}
+\tikzset{orbital 1/.style={orbital,fill=themecolor!66}}
+\tikzset{orbital 2/.style={orbital,fill=themecolor}}
+\tikzset{atomcore/.style={shape=circle,thick,draw=black!90,minimum size=20pt,
+    font=\large\color{black!100!gray},fill=black!20,inner sep=0pt}}
+
+\def\orbheight{1.3}%{1.2}
+\def\orbwidth{0.5}%{.6}
+
+% Parameters: #1 Rotation of the orbital
+%             #2 Coordinate where the orbital should be attached
+%             #3 Number of electrons to draw in the orbital
+\newcommand{\orbital}[3]{
+    \begin{scope}[rotate=#1,shift=(#2)]
+        % These points define the curve for the orbital.
+        \coordinate (c1) at (-\orbwidth, .6 * \orbheight);
+        \coordinate (c2) at (-\orbwidth, \orbheight);
+        \coordinate (c3) at (\orbwidth, \orbheight);
+        \coordinate (c4) at (\orbwidth, .6 * \orbheight);
+        \coordinate (top) at (0,\orbheight);
+
+        %Coordinates of the electrons
+        \coordinate (e1) at (0, 0.45*\orbheight);
+        \coordinate (e2) at (0, 0.75*\orbheight);
+    \end{scope}
+  % These are drawn on a background layer, so orbitals
+  % can overlap without covering the electrons, which
+  % visualises the role electrons play in chemical bonds.
+  \begin{pgfonlayer}{background}
+      \draw[orbital #3] (#2) .. controls (c1) and (c2) .. (top) ..
+            controls (c3) and (c4) .. (#2);
+  \end{pgfonlayer}
+
+  % Draw the electrons
+  \ifnum#3>0
+      \foreach \n in {1,...,#3} {
+          \shade[ball color=electron] (e\n) circle (3pt);
+      }
+  \fi
+}
+
+% This allows to quickly place an atom.
+% Parameters: #1 (Optional) Name of the center node
+%             #2 Text for the center node
+%             #3 A list of rotation-angle/anchor/number of electrons
+\newcommand{\Atom}[3][AtomNode]{
+  \node[atomcore] (#1) {\ce{#2}};
+  \foreach \ang/\anchor/\n in {#3} {
+      \orbital{\ang}{#1.\anchor}{\n}
+  }
+}
+%****************************************************************************************************
+
+%****************************************************************************************************
+% FRECCE
+\tikzset{bluearrow/.style={draw=themecolor,fill=themecolor,single arrow,drop shadow=%
+                           {shadow xshift=.3ex,shadow yshift=-.3ex,color=themecolor!60!black},
+                           minimum height=3.5ex,minimum width=0.1ex,single arrow head extend=0.5ex,
+                           single arrow tip angle=70}}
+
+\newcommand{\arrowup}{\tikz[baseline=-0.5ex]{\node[bluearrow,rotate=90]{};}}
+\newcommand{\arrowdown}{\tikz[baseline=-0.5ex]{\node[bluearrow,rotate=-90]{};}}
+\newcommand{\arrowright}{\tikz[baseline=-0.5ex]{\node[bluearrow]{};}}
+\newcommand{\arrowleft}{\tikz[baseline=-0.5ex]{\node[bluearrow,rotate=180]{};}}
+%****************************************************************************************************
+
+
+% COMANDI PERSONALI
+\newcommand{\gete}{\ce{GeTe}\xspace}
+
