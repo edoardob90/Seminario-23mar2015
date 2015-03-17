@@ -32,6 +32,7 @@
   % or ...
   \setbeamercovered{dynamic}
   % or whatever (possibly just delete it)
+  \usefonttheme{professionalfonts}
 }
 
 
@@ -48,9 +49,10 @@
 {Edoardo Baldi \\\medskip {\small\emph{Relatore:} Prof.~Marco~Bernasconi}}
 % - Use the \inst{?} command only if the authors have different
 %   affiliation.
+\institute[Università di Milano--Bicocca]{Università di Milano--Bicocca --- Dipartimento di Fisica}
 
-\date[] % (optional)
-{23 marzo 2015}
+\date[23 marzo 2015] % (optional)
+{{\small Sessione di Laurea Magistrale del} \\[3pt] 23 marzo 2015}
 
 %\subject{Molecular Dynamics}
 % This is only inserted into the PDF information catalog. Can be left
@@ -76,43 +78,141 @@
   \titlepage
 \end{frame}
 
-\begin{frame}{Outline}
-  \tableofcontents
+%\begin{frame}{Outline}
+%  \tableofcontents
   % You might wish to add the option [pausesections]
-\end{frame}
+%\end{frame}
 
 
-\section{Introduction}
+\section{Introduzione}
 
-\begin{frame}{Phase change materials for optical and electronic memories}
+\begin{frame}{Materiali a cambiamento di fase per memorie ottiche ed elettroniche}
 \begin{minipage}{1.0\textwidth}
   \begin{minipage}[b]{0.53\linewidth}
-  Optical memories: DVD
+  Memorie ottiche: \emph{DVD--RW, Blu--ray Disc}
   \end{minipage}
 \hfill
   \begin{minipage}[b]{0.43\linewidth}\centering
-  %\includegraphics[angle=0, width=0.4\textwidth]{DVD.eps}
-  Ciao
+  \includegraphics[angle=0, width=0.4\textwidth]{DVD}
   \end{minipage}
 \end{minipage}
 \begin{minipage}{1.0\textwidth}
   \begin{minipage}[b]{0.53\linewidth}
-  Non-volatile electronic memories:\hfill\\ Phase Change Memories (PCM)
+  Memorie elettroniche non volatili:\hfill\\ \emph{memorie a cambiamento di fase} (PCM)
   \end{minipage}
 \hfill
   \begin{minipage}[b]{0.43\linewidth}\centering
-  Ciao
-  %\includegraphics[angle=0, width=0.4\textwidth]{PCM.eps}\\
+  \includegraphics[angle=0, width=0.4\textwidth]{PCM}\\
   \end{minipage}
 \end{minipage}
 \vspace{1cm}\\
-%\onslide<2->{
-Chalcogenide alloys: {\ev GeTe}, \textcolor{themecolor}{\textbf{Ge$_2$Sb$_2$Te$_5$ (GST)}}\\
-\vspace{0.5cm}
-fast and reversible amorphous-to-crystal phase transition (50~ns)\\
-%}
+\onslide<2->{
+Leghe di calcogenuri: {\ev \gete}, \textcolor{themecolor}{\textbf{\ce{Ge2Sb2Te5} (GST)}}\\[6pt]
+%\vspace{0.5cm}
+Rapida e reversibile transizione tra cristallo e amorfo ($\sim\SI{50}{ns}$)
+}
 \end{frame}
 
+
+\begin{frame}{Materiali a cambiamento di fase}
+\begin{table}
+\begin{center}
+\begin{tabular}{lcl}
+Due stati della memoria & \arrowright & bit ``0'' o ``1''\\
+\end{tabular}
+\vspace{.5cm}\\
+%\onslide<2->{
+Grande differenza nelle proprietà tra le due fasi \\
+%\vspace{1cm}
+\begin{tabular}{ccc}
+Fase cristallina & {\scriptsize $\arrowright$} & metallica \\
+\end{tabular}
+\quad
+\begin{tabular}{ccc}
+Fase amorfa & {\scriptsize $\arrowright$} & isolante\\
+\end{tabular}
+%}
+\vspace{3ex}\\
+%\onslide<3->{
+\begin{tabular}{lcl}
+Variazione di resistività di 3 ordini di grandezza & {\tiny $\arrowright$} & PCM\\
+Differenza della riflettività del 30\% & {\tiny $\arrowright$} & memorie ottiche\\
+\end{tabular}
+\vspace{0.5cm}\\
+La transizione è indotta per riscaldamento (impulsi laser/corrente)
+%}
+\end{center}
+\end{table}
+\end{frame}
+
+
+\begin{frame}{Cella PCM}
+\begin{columns}
+ \begin{column}{0.5\textwidth}
+  \begin{itemize}
+   \item Regione attiva: piccola porzione del film di materiale a cambiamento di fase che subisce la transizione
+   \item Transizione indotta per effetto Joule
+  \end{itemize}
+ \end{column}
+ \begin{column}{0.5\textwidth}
+   \includegraphics[scale=0.2]{PCMschem}
+  %\includegraphics[width=0.5\textwidth]{PCMschem}
+ \end{column}
+\end{columns}
+\end{frame}
+
+%\begin{minipage}[c]{0.58\linewidth}
+%\begin{flushright}
+%\end{flushright}
+%\end{minipage}
+%\vspace{-0.05\textheight}
+%\begin{minipage}[c]{0.38\linewidth}
+%\includegraphics[angle=0, width=0.9\textwidth]{PCMschem.eps}\\
+%\end{minipage}
+%\begin{minipage}[c]{0.48\linewidth}
+%\centering
+%\includegraphics[angle=0, width=0.9\textwidth]{PCM_SEM.eps}
+%\end{minipage}
+%\vspace{2ex}
+%\begin{minipage}[c]{0.48\linewidth}
+%\small{
+%\begin{itemize}
+%\item Active region: a small drop within GST film undergoes the phase transition\\
+%\item Phase-change by heating via Joule effect
+%\end{itemize}
+%\begin{center}
+%Concept first proposed by\\
+%Ovshinsky in 1968
+%\end{center}
+%}
+%\end{minipage}
+
+\begin{frame}{Caratteristica I--V di una cella PCM}
+\begin{columns}
+ \begin{column}{0.5\textwidth}
+  \begin{itemize}
+    \item<2-> \emph{Lettura}: eseguita a bassa tensione ($V < V\ped{th}$)
+    \item<3-> Processi di \emph{set/reset}: tensione applicata maggiore del valore $V\ped{th}$)
+    \begin{itemize}
+      \item<3-> \emph{Reset}: elevata intensità di corrente e impulso breve \\
+		\ev{cristallo} $\rightarrow$ \ev{amorfo}
+      \item<4-> \emph{Set}: bassa intensità e impulso più lungo \\
+		\ev{amorfo} $\rightarrow$ \ev{cristallo}
+    \end{itemize}
+   \end{itemize}
+ \end{column}
+  \begin{column}{0.5\textwidth}
+   \includegraphics<1>[angle=0, width=1.0\textwidth]{IV1}
+   \includegraphics<2>[angle=0, width=1.0\textwidth]{IVr}
+   \includegraphics<3>[angle=0, width=1.0\textwidth]{IVres}
+   \includegraphics<4>[angle=0, width=1.0\textwidth]{IVs}
+  \end{column}
+\end{columns}
+\end{frame}
+
+
+
+\section{Nanofili di \gete}
 
 
 \end{document}
