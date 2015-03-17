@@ -1,0 +1,6 @@
+\beamer@endinputifotherversion {3.33pt}
+\select@language {italian}
+\select@language {italian}
+\beamer@sectionintoc {1}{Introduzione}{2}{0}{1}
+\beamer@sectionintoc {2}{Nanofili di \ce {GeTe}\xspace }{13}{0}{2}
+\beamer@sectionintoc {3}{Metodi computazionali}{17}{0}{3}
