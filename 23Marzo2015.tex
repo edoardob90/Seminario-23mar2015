@@ -89,7 +89,7 @@
 \begin{frame}{Materiali a cambiamento di fase per memorie ottiche ed elettroniche}
 \begin{minipage}{1.0\textwidth}
   \begin{minipage}[b]{0.53\linewidth}
-  Memorie ottiche: \emph{DVD--RW, Blu--ray Disc}
+  Memorie ottiche: {\ev DVD--RW, Blu--ray Disc}
   \end{minipage}
 \hfill
   \begin{minipage}[b]{0.43\linewidth}\centering
@@ -98,7 +98,7 @@
 \end{minipage}
 \begin{minipage}{1.0\textwidth}
   \begin{minipage}[b]{0.53\linewidth}
-  Memorie elettroniche non volatili:\hfill\\ \emph{memorie a cambiamento di fase} (PCM)
+  Memorie elettroniche non volatili:\hfill\\ {\ev memorie a cambiamento di fase} (PCM)
   \end{minipage}
 \hfill
   \begin{minipage}[b]{0.43\linewidth}\centering
@@ -210,9 +210,104 @@ La transizione è indotta per riscaldamento (impulsi laser/corrente)
 \end{columns}
 \end{frame}
 
+\begin{frame}{Nanofili nei dispositivi PCM}
+ \begin{exampleblock}{Vantaggi nell'utilizzo di nanofili}
+  \begin{itemize}
+   \item<1-> Riduzione della potenza dissipata nel processo di programmazione
+   \item<2-> Riduzione delle dimensioni della cella 
+  \end{itemize}
+\end{exampleblock}
+\note<1>{%
+  Sono state proposte diverse architetture per ridurre la potenza dissipata nel processo di programmazione. Una di queste consiste nel sostituire al film di materiale attivo, un nanofilo, che permette un miglior confinamento del calore e in principio consente anche una riduzione delle dimensioni della cella.
+}
+\end{frame}
+
+
+\begin{frame}{La cristallizzazione}
+ \begin{alertblock}{}
+  La cinetica di cristallizzazione è di difficile approccio sperimentale 
+ \end{alertblock}
+
+\end{frame}
+
 
 
 \section{Nanofili di \gete}
+
+\begin{frame}{Il \gete}
+ \begin{columns}
+  \begin{column}{0.4\textwidth}
+      \begin{itemize}
+       \item<1-> Struttura cristallina trigonale (fase $\alpha$): cella elementare romboedrica
+       \item<2-> Struttura cubica tipo \ce{NaCl} elongata lungo la $\langle 111 \rangle$
+       \item<3-> Parametri strutturali
+      \onslide<3->{% 
+       \begin{itemize}
+        \item $a=\SI{4.31}{\angstrom}$
+        \item $\alpha=\ang{57.9}$
+        \item $x=\num{0.2366}$ \\[3pt] Ge: $(x,\,x,\,x)$ \\[3pt] Te: $(-x,\,-x,\,-x)$
+       \end{itemize}}
+       \note<3>{%
+	 I parametri strutturali della struttura trigonale sono il passo reticolare $a$, l'angolo tra una coppia di vettori di base $\alpha$ e il parametro $x$ che assegna le posizioni nella cella elementare dei due atomi di Ge e Te. 
+	}
+      \end{itemize}
+  \end{column}
+  \begin{column}{0.4\textwidth}
+   \includegraphics[width=0.7\textwidth]{GeTe-cell}\\[12pt]
+   \includegraphics[width=\textwidth]{GeTe-bilayer}
+  \end{column}
+
+ \end{columns}
+
+\end{frame}
+
+\begin{frame}{Nanofili: il modello}
+ Nanofili: il modello
+\end{frame}
+
+
+
+
+
+\section{Metodi computazionali}
+%\subsection{Potenziale \emph{neural networks}}
+\begin{frame}{Dinamica molecolare con potenziale \emph{neural networks}}
+ MD e potenziale NN
+\end{frame}
+
+\begin{frame}{Potenziale \emph{neural networks}}
+ \centering
+Total energy as a sum of the atomic energies: $E_{tot} = \sum_i E_i$
+\begin{flushright}
+{\cit{[Behler J. and Parrinello M., Phys. Rev. Lett. 2007]}}
+\end{flushright}
+\vspace{3ex}
+\begin{columns}[c]
+\column{0.50\textwidth}
+\begin{displaymath}
+E_i = F(\{G(\bar{x})\}) 
+\end{displaymath}
+\column{0.50\textwidth}
+\centering
+{\ev{Symmetry functions $\{G\}$}}\\
+Information on the atomic environment
+up to a certain cut-off radius
+(3$^{rd}$ coordination shell)\\
+\end{columns}
+\vspace{2ex}
+\begin{columns}[c]
+\column{0.50\textwidth}
+\centering
+\includegraphics[angle=0, width=0.7\textwidth]{NN_schema}
+\column{0.50\textwidth}
+$E_i$ analytic function of the atomic positions
+\end{columns}
+\end{frame}
+
+
+
+
+%\section{Risultati}
 
 
 \end{document}
