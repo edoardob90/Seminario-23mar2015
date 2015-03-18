@@ -1,0 +1,50 @@
+%%% TiKz picture of NN scheme
+\begin{tikzpicture}
+  %%Create a style for the arrows we are using
+  \tikzset{normal arrow/.style={draw,-stealth',very thick,color=themecolor}}
+  \tikzset{little arrow/.style={draw,-stealth',thick,color=themecolor!60!white}}
+  \tikzset{node circle/.style={circle,shading=ball,ball color=themecolor,text=white}}
+  \tikzstyle{layer} = [text width=4em, text centered]
+  %%Create the different coordinates to place the nodes
+  \path (0,0) coordinate (g1) ++(0,-2.5) coordinate (g2); %++(0,-2) coordinate (3);
+  \path (g1) ++(-1.3,-.5) coordinate (x1);
+  \path (g2) ++(-1.3,+.5) coordinate (x2);
+  %%Use the calc library and partway modifiers to generate the second and third level points
+  \path ($(g1)!.5!(g2)!2.2 cm!90:(g2)$) coordinate (y2);
+  \path (y2) ++(0,2) coordinate (y1);
+  \path (y2) ++(0,-2) coordinate (y3);
+  \path (y2) ++(1.7,0) coordinate (e);
+  %%Place nodes at each point using the foreach construct
+  \foreach \in/\i/\color in {g1/1/themecolor!60,g2/2/themecolor!60}{
+%    \node[draw,circle,shading=axis,top color=\color, bottom color=\color!black,text=white,shading angle=45] (n\in) at (\in) {$G_{\i}$};
+    \node[node circle] (n\in) at (\in) {$G_{\i}$};
+  }
+  \foreach \in/\i/\color in {y1/1/themecolor!60,y2/2/themecolor!60,y3/3/themecolor!60}{
+%    \node[draw,circle,shading=axis,top color=\color, bottom color=\color!black,text=white,shading angle=45] (n\in) at (\in) {$y_{\i}$} 
+%         node[above of =n\in,node distance=2em]{$f_{\i}$};
+    \node[node circle] (n\in) at (\in) {$y_{\i}$} node[above of =n\in,node distance=2em]{$f_{\i}$};
+  }
+%  \node[draw,circle,shading=axis,top color=themecolor!60, bottom color=themecolor!60!black,text=white,shading angle=45] (ne) at (e) {$\;\;E_{i}\;\;$}; 
+  \node[node circle] (ne) at (e) {$\;\;E_{i}\;\;$};
+  %%Place the remaining nodes separately
+  \node (nx1) at (x1) {$\bm{x}_1$};
+  \node (nx2) at (x2) {$\bm{x}_2$};
+  %%Layer titles
+  \node[layer,above of=ny2, node distance=22ex] (hl) {Hidden layer};
+  \node[layer,left of=hl, node distance=2.2cm] (il) {Input layer};
+  \node[layer,above of=e, node distance=22ex] (ol) {Output layer};
+  %%Drawing the arrows
+  \path[little arrow] (nx1) -- (ng1);
+  \path[little arrow] (nx1) -- (ng2);
+  \path[little arrow] (nx2) -- (ng1);
+  \path[little arrow] (nx2) -- (ng2);
+  \path[normal arrow] (ng1) -- node[above=.0em] {$a_{11}^{01}$} (ny1);
+  \path[normal arrow] (ng1) -- node[above=.0em] {$a_{12}^{01}$} (ny2);
+  \path[normal arrow] (ng1) -- node[below=-2.0em,left=1.4em] {$a_{13}^{01}$} (ny3);
+  \path[normal arrow] (ng2) -- (ny1);
+  \path[normal arrow] (ng2) -- (ny2);
+  \path[normal arrow] (ng2) -- node[below=0.0em] {$a_{23}^{01}$} (ny3);
+  \path[normal arrow] (ny1) -- node[above=0.2em] {$a_{11}^{12}$} (ne);
+  \path[normal arrow] (ny2) -- node[above=0.1em] {$a_{21}^{12}$} (ne);
+  \path[normal arrow] (ny3) -- node[above=0.5em] {$a_{31}^{12}$} (ne);
+\end{tikzpicture}
