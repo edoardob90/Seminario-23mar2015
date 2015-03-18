@@ -1,5 +1,5 @@
 %\documentclass[draft]{beamer}
-
+%\documentclass[handout]{beamer}
 \documentclass{beamer}
 
 % This file is a solution template for:
@@ -37,6 +37,9 @@
 
 
 \input{Preamble}
+
+%%% Layout di 4 pagine per foglio
+%\pgfpagesuselayout{4 on 1}[a4paper,border shrink=5mm,landscape]
 
 
 \title[Cristallizzazione in nanofili di \gete] % (optional, use only with long paper titles)
@@ -299,7 +302,7 @@ La transizione è indotta per riscaldamento (impulsi laser/corrente)
   \begin{column}{0.5\textwidth}
     \begin{itemize}
       \item Nanofilo cresciuto lungo la {\ev direzione $[110]$} (notazione esagonale)
-      \item Cella elementare lungo l'asse di crescita contiene \num{1654} atomi (\num{798} Ge e \num{856} Te)
+      \item Diametro di $\sim \SI{8}{nm}$
       \item Supercella di simulazione \\ {\ev$l=\SI{84.65}{\angstrom}$} e {\ev\num{16540} atomi}
       \item PBC lungo l'asse di crescita
   \end{itemize}
@@ -482,6 +485,79 @@ Informazioni sull'intorno atomico entro un certo raggio di \emph{cutoff} (terza 
   \end{columns}
 }
 \end{frame}
+
+\begin{frame}{Cristallizzazione}{Velocità di crescita}
+ Velocità di crescita secondo la \emph{teoria classica della nucleazione}
+ %\centering
+  \begin{equation*}
+    u(T)= u\ped{kin} \left[ 1- e^{ \left( -\Delta\mu/k_B T\right) } \right]
+  \end{equation*}
+ \begin{columns}[c]
+  \begin{column}{0.5\textwidth}
+  \centering
+  \begin{displaymath}
+   u\ped{kin}= \frac{6 D}{\lambda}
+  \end{displaymath}
+  \only<1>{{\ev fattore cinetico} che dipende dal coefficiente $D$}
+  \end{column}
+%
+  \begin{column}{0.5\textwidth}
+  \centering
+  \begin{displaymath}
+   \Delta\mu = \Delta H_m \frac{(T_m-T)\,2T}{(T_m+T)\,T_m}
+  \end{displaymath}
+  \only<1>{{\ev differenza di potenziale chimico} tra cristallo e amorfo (formula di Thompson--Spaepen)}
+  \end{column}
+ \end{columns}
+ \only<2->{%
+  \begin{exampleblock}{}
+   \centering
+   $D$ e $\Delta\mu$ hanno andamenti opposti in funzione di $T$ \\
+   La funzione $u(T)$ ha perciò un massimo
+  \end{exampleblock}
+}
+\end{frame}
+
+
+\begin{frame}{Cristallizzazione}{Confronto con \gete \emph{bulk}}
+\only<1>{%
+ \begin{columns}
+  \begin{column}{0.4\textwidth}
+   \begin{itemize}
+    \item Modello di $\beta$--\gete bulk (fase cubica)
+    \item Piano esposto all'interfaccia $(100)$
+    \item Dimensioni \\
+	  $a=b=\SI{48.59}{\angstrom}$ \\
+	  $c=\SI{127.91}{\angstrom}$
+    \item \num{10240} atomi
+   \end{itemize}
+  \end{column}
+%
+  \begin{column}{0.6\textwidth}
+  \centering
+   \includegraphics[scale=0.18]{m1_long}\quad
+   \includegraphics[scale=0.10]{m1_section}
+  \end{column}
+ \end{columns}
+}
+%
+\only<2>{%
+ \centering
+  Simulazioni NVT a \num{500} e \SI{700}{K}
+  \vspace{0.2cm}
+  \begin{columns}
+   \begin{column}{.5\textwidth}
+   \centering
+    \includegraphics[width=\textwidth]{bulk_Lcr_500}
+   \end{column}
+   \begin{column}{0.5\textwidth}
+   \centering
+    \includegraphics[width=\textwidth]{bulk_Lcr_700}
+   \end{column}
+  \end{columns}
+}
+\end{frame}
+
 
 
 %%% BACKUP FRAMES
