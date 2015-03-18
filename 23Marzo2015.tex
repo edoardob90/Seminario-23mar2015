@@ -492,24 +492,29 @@ Informazioni sull'intorno atomico entro un certo raggio di \emph{cutoff} (terza 
   \begin{equation*}
     u(T)= u\ped{kin} \left[ 1- e^{ \left( -\Delta\mu/k_B T\right) } \right]
   \end{equation*}
+\only<-3>{%
  \begin{columns}[c]
+ \onslide<2-3>{%
   \begin{column}{0.5\textwidth}
   \centering
   \begin{displaymath}
    u\ped{kin}= \frac{6 D}{\lambda}
   \end{displaymath}
-  \only<1>{{\ev fattore cinetico} che dipende dal coefficiente $D$}
-  \end{column}
+  {\ev fattore cinetico} che dipende dal coefficiente $D$
+  \end{column}} % end first onslide
 %
+ \onslide<3>{%
   \begin{column}{0.5\textwidth}
   \centering
   \begin{displaymath}
    \Delta\mu = \Delta H_m \frac{(T_m-T)\,2T}{(T_m+T)\,T_m}
   \end{displaymath}
-  \only<1>{{\ev differenza di potenziale chimico} tra cristallo e amorfo (formula di Thompson--Spaepen)}
-  \end{column}
+  {\ev differenza di potenziale chimico} tra cristallo e amorfo (formula di Thompson--Spaepen)
+  \end{column}} % end second onslide
  \end{columns}
- \only<2->{%
+} % end only
+%
+ \only<4->{%
   \begin{exampleblock}{}
    \centering
    $D$ e $\Delta\mu$ hanno andamenti opposti in funzione di $T$ \\
@@ -555,6 +560,12 @@ Informazioni sull'intorno atomico entro un certo raggio di \emph{cutoff} (terza 
     \includegraphics[width=\textwidth]{bulk_Lcr_700}
    \end{column}
   \end{columns}
+}
+%
+\only<3>{%
+ \centering
+  $u(T)$ per nanofilo e bulk \\[.2cm]
+  \includegraphics[scale=0.70,keepaspectratio]{U_vs_T-BeamerVer}
 }
 \end{frame}
 
