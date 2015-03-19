@@ -1,0 +1,80 @@
+  Simulazioni NVT a \num{500} e \SI{700}{K}
+  \vspace{0.2cm}
+  \begin{columns}
+   \begin{column}{.5\textwidth}
+   \centering
+    \includegraphics[width=\textwidth]{bulk_Lcr_500}
+   \end{column}
+   \begin{column}{0.5\textwidth}
+   \centering
+    \includegraphics[width=\textwidth]{bulk_Lcr_700}
+   \end{column}
+  \end{columns}
+  
+  
+  
+  \begin{frame}{Cristallizzazione}
+ \only<1-2>{%
+  \begin{itemize}
+   \item<1-> Simulazioni $NVT$ per $\sim \SI{e2}{ps}$
+   \item<1-> Temperature nell'intervallo \num{500}--\SI{850}{K}
+   \item<2-> Atomo cristallino secondo il parametro d'ordine $\bar{Q}_4$ \\
+      %\begin{flushright}
+       %{\cit{[Sosso et al., J. Phys. Chem. C (2015)]}}
+      %\end{flushright}
+    \item<2-> Spessore dello \emph{slab} cristallino in funzione di $t$
+      \begin{displaymath}
+       L\ped{cr}=N\ped{cr}\frac{d\ped{hkl}}{2N\ped{surf}}
+      \end{displaymath}
+    \item<2-> Velocità di crescita $u=dL\ped{cr}/dt$
+  \end{itemize}
+}
+\only<3>{%
+  \begin{columns}
+   \begin{column}{0.5\textwidth}
+    \includegraphics[width=\textwidth]{Lcr_t_500}
+   \end{column}
+   \begin{column}{0.5\textwidth}
+    \includegraphics[width=\textwidth]{Lcr_t_700}
+   \end{column}
+  \end{columns}
+}
+\end{frame}
+
+
+
+
+
+
+%%% Equazioni CNT
+
+
+\only<-3>{%
+ \begin{columns}[c]
+ \onslide<2-3>{%
+  \begin{column}{0.5\textwidth}
+  \centering
+  \begin{displaymath}
+   u\ped{kin}= \frac{6 D}{\lambda}
+  \end{displaymath}
+  {\ev fattore cinetico} che dipende dal coefficiente $D$
+  \end{column}} % end first onslide
+%
+ \onslide<3>{%
+  \begin{column}{0.5\textwidth}
+  \centering
+  \begin{displaymath}
+   \Delta\mu = \Delta H_m \frac{(T_m-T)\,2T}{(T_m+T)\,T_m}
+  \end{displaymath}
+  {\ev differenza di potenziale chimico} tra cristallo e amorfo (formula di Thompson--Spaepen)
+  \end{column}} % end second onslide
+ \end{columns}
+} % end only
+%
+ \only<4->{%
+  \begin{exampleblock}{}
+   \centering
+   $D$ e $\Delta\mu$ hanno andamenti opposti in funzione di $T$ \\
+   La funzione $u(T)$ ha perciò un massimo
+  \end{exampleblock}
+}

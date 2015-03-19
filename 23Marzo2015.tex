@@ -32,7 +32,8 @@
   \setbeamercovered{dynamic}
   % or whatever (possibly just delete it)
   \usefonttheme{professionalfonts}
-  %\setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{footline}[frame number]
 }
 
 
@@ -42,19 +43,19 @@
 %\pgfpagesuselayout{4 on 1}[a4paper,border shrink=5mm,landscape]
 
 
-\title[Cristallizzazione in nanofili di \gete] % (optional, use only with long paper titles)
+\title[] % (optional, use only with long paper titles)
 {Simulazioni atomistiche del processo di cristallizzazione in nanofili di \gete}
 
 %\subtitle
 %{Molecular dynamics simulations in microcanonical ensemble} % (optional)
 
-\author[Edoardo Baldi] % (optional, use only with lots of authors)
+\author[] % (optional, use only with lots of authors)
 {Edoardo Baldi\\\medskip {\small\emph{Relatore:} Prof.~Marco~Bernasconi}}
 % - Use the \inst{?} command only if the authors have different
 %   affiliation.
-\institute[Università di Milano--Bicocca]{Università di Milano--Bicocca --- Dipartimento di Fisica}
+\institute[]{Università di Milano--Bicocca --- Dipartimento di Fisica}
 
-\date[23 marzo 2015] % (optional)
+\date[] % (optional)
 {{\small Sessione di Laurea Magistrale del} \\[3pt] 23 marzo 2015}
 
 %\subject{Molecular Dynamics}
@@ -92,7 +93,7 @@
 \begin{frame}{Materiali a cambiamento di fase per memorie ottiche ed elettroniche}
 \begin{minipage}{1.0\textwidth}
   \begin{minipage}[b]{0.53\linewidth}
-  Memorie ottiche: {\ev DVD--RW, Blu--ray Disc}
+  Memorie ottiche: {\ev DVD--RW,\\ Blu--ray Disc}
   \end{minipage}
 \hfill
   \begin{minipage}[b]{0.43\linewidth}\centering
@@ -109,9 +110,9 @@
   \end{minipage}
 \end{minipage}
 \vspace{1cm}\\
-\onslide<2->{
 Leghe di calcogenuri: {\ev \gete}, \textcolor{themecolor}{\textbf{\ce{Ge2Sb2Te5} (GST)}}\\[6pt]
 %\vspace{0.5cm}
+\onslide<2->{
 Rapida e reversibile transizione tra cristallo e amorfo ($\sim\SI{50}{ns}$)
 }
 \end{frame}
@@ -194,7 +195,7 @@ La transizione è indotta per riscaldamento (impulsi laser/corrente)
 \begin{columns}
  \begin{column}{0.5\textwidth}
   \begin{itemize}
-    \item<2-> \emph{Lettura}: eseguita a bassa tensione ($V < V\ped{th}$)
+    \item<2> \emph{Lettura}: eseguita a bassa tensione ($V < V\ped{th}$)
     \item<3-> Processi di \emph{set/reset}: tensione applicata maggiore del valore $V\ped{th}$)
     \begin{itemize}
       \item<3-> \emph{Reset}: elevata intensità di corrente e impulso breve \\
@@ -213,11 +214,37 @@ La transizione è indotta per riscaldamento (impulsi laser/corrente)
 \end{columns}
 \end{frame}
 
+\begin{frame}
+\frametitle{PCM commerciali}
+{\ev Aprile 2010} 
+\hspace{10em}\raisebox{-1ex}{\includegraphics[angle=0, width=0.2\textwidth]{PCM_numonyx.eps}}\\
+\vspace{1ex}
+\textcolor{themecolor}{Numonyx} (ora \textcolor{themecolor}{Micron}) ha commercializzato un dispositivo PCM di 90~nm\\
+%Research center based in Agrate Brianza\\
+\vspace{3ex}
+{\ev Luglio 2012}\\
+\vspace{1ex}
+\textcolor{themecolor}{Numonyx}: dispositivo a 45~nm\\ %(Agrate)\\
+%\vspace{1ex}
+\begin{columns}[c]
+\column{0.00\textwidth}
+\column{0.70\textwidth}
+{\ev Gennaio 2013}\\
+\vspace{1ex}
+\textcolor{themecolor}{Nokia}: telefono cellulare ``Asha'' con\\
+dispositivo PCM Micron %(NOR replacement)\\
+\column{0.30\textwidth}
+\includegraphics[angle=0, width=0.4\textwidth]{nokia.eps}
+\end{columns}
+\end{frame}
+
+
 \begin{frame}{Nanofili nei dispositivi PCM}
  \begin{exampleblock}{Vantaggi nell'utilizzo di nanofili}
   \begin{itemize}
-   \item<1-> Riduzione della potenza dissipata nel processo di programmazione
-   \item<2-> Riduzione delle dimensioni della cella 
+   \item Riduzione delle dimensioni della cella
+   \item Riduzione della potenza dissipata nel processo di programmazione
+   \item Effetti di confinamento del calore
   \end{itemize}
 \end{exampleblock}
 \note<1>{%
@@ -227,40 +254,42 @@ La transizione è indotta per riscaldamento (impulsi laser/corrente)
 
 
 \begin{frame}{La cristallizzazione}
-\only<1>{%
+%\only<1>{%
  \begin{exampleblock}{}
  La cristallizzazione determina la velocità di \emph{switching} nei dispositivi \\[3pt]
  \end{exampleblock}
-}
-\only<2>{%
- \begin{alertblock}{}
- La cinetica di cristallizzazione è di difficile approccio sperimentale\\[3pt]
- \end{alertblock}
-}
-\onslide<1->{%
+%}
+%\only<2>{%
+% \begin{alertblock}{}
+% La cinetica di cristallizzazione è di difficile approccio sperimentale\\[3pt]
+% \end{alertblock}
+%}
+\only<1>{%
  \centering
- {\ev Teoria della nucleazione e crescita}\\[0.2cm]
+ {\ev Teoria della nucleazione e crescita}\\[0.5cm]
  \begin{columns}
   \begin{column}{0.5\textwidth}
    \centering
-   \includegraphics[width=0.3\textwidth]{N-dominated}\\
-   {\ev Nucleazione}
+   \includegraphics[width=0.3\textwidth]{N-dominated}\\[6pt]
+   {\ev \emph{Nucleation--driven}}
   \end{column}
   \begin{column}{0.5\textwidth}
    \centering
-   \includegraphics[width=0.3\textwidth]{G-dominated}\\
-   {\ev Crescita}
+   \includegraphics[width=0.3\textwidth]{G-dominated}\\[6pt]
+   {\ev \emph{Growth--driven}}
   \end{column}
  \end{columns}
  %\begin{alertblock}{}
  % La cinetica di cristallizzazione è di difficile approccio sperimentale 
  %\end{alertblock}
 }
-\vspace{.1cm}
-\onslide<2->{%
+%\vspace{.1cm}
+\only<2>{%
   \begin{itemize}
-   \item Il meccanismo di cristallizzazione dipende dalla dimensione della fase amorfa
-   \item Nelle PCM la fase amorfa è portata a $T$ molto maggiori di $T_g$ (liquido sotto--raffreddato)
+   \item Il meccanismo di cristallizzazione dipende dalla dimensione della fase amorfa, dalla temperatura e dal materiale
+   \item Nelle PCM la fase amorfa è portata a $T$ molto maggiori di $T\ped{glass}$ (liquido sotto--raffreddato)
+   \item La cinetica di cristallizzazione può cambiare da \emph{bulk} a nanofili \\[3pt]
+      $T\ped{fus}$ e $T\ped{glass}$ dipendono dalle dimensioni
   \end{itemize}
 
 }
@@ -275,15 +304,19 @@ La transizione è indotta per riscaldamento (impulsi laser/corrente)
   \begin{column}{0.4\textwidth}
       \begin{itemize}
        \item<1-> Struttura cristallina {\ev trigonale} (fase $\alpha$) con cella elementare {\ev romboedrica}
-       \item<2-> Struttura cubica tipo \ce{NaCl} elongata lungo la $\langle 111 \rangle$
-       \item<3-> Parametri strutturali
-      \onslide<3->{% 
-       \begin{itemize}
-        \item $a=\SI{4.31}{\angstrom}$
-        \item $\alpha=\ang{57.9}$
-        \item $x=\num{0.2366}$ \\[3pt] Ge: $(x,\,x,\,x)$ \\[3pt] Te: $(-x,\,-x,\,-x)$
-       \end{itemize}}
-       \note<3>{%
+       \item<1-> Struttura cubica tipo \ce{NaCl} elongata lungo la $\langle 111 \rangle$
+       \item<2-> Parametri strutturali
+      %\onslide<3->{% 
+       %\begin{itemize}
+        %\item 
+        $a=\SI{4.31}{\angstrom}$\\
+        %\item 
+        $\alpha=\ang{57.9}$\\
+        %\item 
+        $x=\num{0.2366}$ \\[3pt] Ge: $(x,\,x,\,x)$ \\[3pt] Te: $(-x,\,-x,\,-x)$
+       %\end{itemize}
+       %}
+       \note<2>{%
 	 I parametri strutturali della struttura trigonale sono il passo reticolare $a$, l'angolo tra una coppia di vettori di base $\alpha$ e il parametro $x$ che assegna le posizioni nella cella elementare dei due atomi di Ge e Te. 
 	}
       \end{itemize}
@@ -301,7 +334,7 @@ La transizione è indotta per riscaldamento (impulsi laser/corrente)
  \begin{columns}
   \begin{column}{0.5\textwidth}
     \begin{itemize}
-      \item Nanofilo cresciuto lungo la {\ev direzione $[110]$} (notazione esagonale)
+      \item Nanofilo cresciuto lungo la {\ev direzione $[110]$}\\ (notazione esagonale)
       \item Diametro di $\sim \SI{8}{nm}$
       \item Supercella di simulazione \\ {\ev$l=\SI{84.65}{\angstrom}$} e {\ev\num{16540} atomi}
       \item PBC lungo l'asse di crescita
@@ -309,10 +342,13 @@ La transizione è indotta per riscaldamento (impulsi laser/corrente)
   \end{column}
   \begin{column}{0.5\textwidth}
    \centering
-   \includegraphics[width=0.4\textheight]{nw_long_OK_wDir}\\[6pt]
-   \includegraphics[width=0.4\textheight]{nw_section_OK}
+   \includegraphics[width=0.35\textheight]{nw_section_OK}\\[3pt]
+   \includegraphics[width=0.35\textheight]{nw_long_OK_wDir}
   \end{column}
  \end{columns}
+ \vspace{0.2cm}
+ \centering
+ Simulazioni di {\ev dinamica molecolare} del processo di cristallizzazione con potenziale interatomico
 \end{frame}
 
 
@@ -325,29 +361,37 @@ La transizione è indotta per riscaldamento (impulsi laser/corrente)
 % MD e potenziale NN
 %\end{frame}
 
-
-
 %\subsection{Potenziale NN}
 
 \begin{frame}{Potenziale \emph{neural networks}}
  \centering
 Energia totale come somma di energie atomiche: $E_{tot} = \sum_i E_i$
+\note<1>{%
+The neural network potential is built by writing the total energy as 
+a sum of the atomic energies which depend on the atomic local environment. 
+And the local environment is described by the symmetry functions $G$ 
+which depend on bond lengths and bond angles up to a certain cut-off distance 
+that in our case include the third coordination shell.\\
+The neural network is a scheme to assign an energy to a single atom given the 
+local environment. The atomic energy is an analytic function of the atomic 
+positions, so it is easy to calculate forces. 
+}
 \begin{flushright}
-{\cit{[J.~Behler and M.~Parrinello, PRL 98, 146401 (2007)]}}
+{\cit{[J.~Behler e M.~Parrinello, PRL 98, 146401 (2007)]}}
 \end{flushright}
 %
 %\vspace{3ex}
 \onslide<2->{%
-\begin{columns}[c]
-\begin{column}{0.50\textwidth}
-\begin{equation*}
- E_i = F(\{G(\bar{x})\}) 
-\end{equation*}
-\vspace{.5cm}
-\centering
-\resizebox*{0.8\textwidth}{!}{\input{NN-scheme}}
-\end{column}
-\note<2>{
+  \begin{columns}[c]
+    \begin{column}{0.50\textwidth}
+      \begin{equation*}
+	E_i = F(\{G(\vec{x})\}) 
+      \end{equation*}
+      \vspace{.5cm}
+      \centering
+      \resizebox*{0.8\textwidth}{!}{\input{NN-scheme}}
+    \end{column}
+\note<2>{%
 This picture represent a simple scheme of a neural network.
 The symmetry functions are obtained from the atomic positions and are the input 
 values of the network. We take a linear combination of the symmetry functions with 
@@ -357,49 +401,22 @@ obtain the atomic energy. The weights $a$ are the fitting parameters of the pote
 In our case for GeTe the network has 8 thousand parameters fitted on 30 thousand 
 configurations.  
 }
-
+%
 \begin{column}{0.50\textwidth}
 \centering
 {\ev{Symmetry function $\{G\}$}}\\
 Informazioni sull'intorno atomico entro un certo raggio di \emph{cutoff} (terza \emph{shell} di coordinazione)\\[12pt]}
 \onslide<3->{%
   $E_i$ è funzione analitica delle posizioni degli atomi
+  \begin{equation*}
+    E_i = \sum_{j=1}^3{a_{j1}^{12}\cdot f\left(\sum_{k=1}^2{G_k\cdot a_{kj}^{01}}\right)}
+  \end{equation*}
+
 }
 \end{column}
 \end{columns}
-%
-%
-%\vspace{2ex}
-%\begin{columns}[c]
-%\begin{column}{0.5\textwidth}
-%\centering
-%\includegraphics[angle=0, width=0.7\textwidth]{NN_schema}
-%  \resizebox*{0.5\textwidth}{!}{\input{NN-scheme}}
-%\end{column}
-%\begin{column}{0.50\textwidth}
-%$E_i$ è funzione analitica delle posizioni degli atomi
-%\end{column}
-%\end{columns}
-%
-%
 \end{frame}
 
-
-%\begin{frame}{Potenziale \emph{neural networks} per il \gete}
-%\begin{columns}
-%\begin{column}{0.4\textwidth}
-
-%\end{column}
-%\begin{column}{0.55\textwidth}
-%\centering
-%\vspace{4ex}
-%\resizebox*{0.8\textwidth}{!}{\input{NN-scheme}}
-%\vspace{2ex}
-%\small{%
-%\mbox{$E_i = \sum_{j=1}^3{a_{j1}^{12}\cdot f\left(\sum_{k=1}^2{G_k\cdot a_{kj}^{01}}\right)}$}}
-%\end{column}
-%\end{columns}
-%\end{frame}
 
 %\subsection{Potenziale NN per il \gete}
 \begin{frame}{Potenziale \emph{neural networks} per il \gete}
@@ -424,7 +441,7 @@ Informazioni sull'intorno atomico entro un certo raggio di \emph{cutoff} (terza 
    \begin{itemize}
     \item Il potenziale NN descrive accuratamente le proprietà della fase liquida/amorfa del \gete
     \item Coefficiente di diffusione $D$: {\ev \SI{4.29e-5}{\square\centi\metre\per\second}}\\ (DFT~\SI{4.29e-5}{\square\centi\metre\per\second})
-    \item $T_m$: {\ev\SI{1001}{K}}\\ (exp.~\SI{998}{K})
+    \item $T\ped{fus}$: {\ev\SI{1001}{K}}\\ (exp.~\SI{998}{K})
    \end{itemize}
   \end{column}
  \end{columns}
@@ -436,15 +453,86 @@ Informazioni sull'intorno atomico entro un certo raggio di \emph{cutoff} (terza 
 
 \section{Risultati}
 
+\begin{frame}{Cristallizzazione in \emph{bulk}}
+\only<1>{%
+\centering
+Interfaccia tra cristallo e liquido sotto--raffreddato
+  \begin{columns}
+  \begin{column}{0.5\textwidth}
+   \begin{itemize}
+    \item Simulazioni $NVT$ per $\sim \SI{100}{ps}$
+    \item Atomi cristallini identificati secondo il parametro d'ordine
+      \[ \mathsmaller{q_{4m}(i) = \frac{1}{N_b (i)} \sum_{j=1}^{N_b(i)} Y_{4m}(\bm{r}_{ij})} \]
+      \begin{flushleft}
+       {\cit{[Steinhardt et al., PRB 28, 784 (1983)]}}
+      \end{flushleft}
+    \item Spessore dello \emph{slab} cristallino L\ped{cris} in funzione di t
+   \end{itemize}
+  \end{column}
+%
+  \begin{column}{0.5\textwidth}
+  \centering
+   \includegraphics[scale=0.15]{m1_long_OK}\quad
+   \includegraphics[scale=0.15]{m1_AfterCry}
+  \end{column}
+ \end{columns}
+}
+\only<2>{%
+  \begin{columns}
+   \begin{column}{0.5\textwidth}
+    \includegraphics[width=\textwidth]{bulk_Lcr_500_OK}
+   \end{column}
+   \begin{column}{0.5\textwidth}
+    \includegraphics[width=\textwidth]{bulk_Lcr_700_OK}
+   \end{column}
+  \end{columns}
+ \vspace{.5cm}
+ \centering
+ Velocità di crescita
+ \[ u = \frac{dL\ped{cris}}{dt} \]
+}
+\end{frame}
+
+\begin{frame}{Temperatura di fusione}
+%\centering
+Stima della temperatura di fusione nei nanofili\\[12pt]
+\begin{columns}
+\begin{column}{0.4\textwidth}
+\includegraphics[width=\textwidth]{nw_superc}
+\end{column}
+%
+\begin{column}{0.6\textwidth}
+%\begin{itemize}
+%\item
+ 4 simulazioni $NVT$ a \num{800}--\num{850}--\num{900}--\SI{950}{K}:\\[3pt]
+  \begin{itemize}
+    \item a \SI{800}{K} {\ev cristallizzazione}
+    \item a \SI{850}{K} {\ev fusione}
+  \end{itemize}
+%\end{itemize}
+\end{column}
+\end{columns}
+\onslide<2->{%
+\begin{exampleblock}{Riduzione di T\ped{fus}}
+\centering
+  $\SI{800}{K} < T\ped{fus}^N < \SI{850}{K}$\\[6pt]
+  $T\ped{fus}^B \sim \SI{1000}{K}$
+\end{exampleblock}
+}
+
+\end{frame}
+
+
+
 %\subsection{Generazione del liquido}
 
 \begin{frame}{Generazione del liquido \emph{supercooled}}
  \begin{columns}
   \begin{column}{0.5\textwidth}
    \begin{itemize}
-    \item Generata portando una parte del nanofilo a $T > T_m$ in \SI{30}{ps}
-    \item Equilibrata per \SI{10}{ps} in $NVE$
-    \item Raffreddata rapidamente (\SI{30}{ps}) a \num{700}, \num{600} e \SI{500}{K}
+    \item Generato portando una parte del nanofilo a $T > T_m$ in \SI{30}{ps}
+    \item Equilibrato per \SI{10}{ps} in $NVE$
+    \item Raffreddato rapidamente (\SI{30}{ps}) a \num{700}--\num{600}--\SI{500}{K}
    \end{itemize}
 
   \end{column}
@@ -455,123 +543,118 @@ Informazioni sull'intorno atomico entro un certo raggio di \emph{cutoff} (terza 
 \end{frame}
 
 
-\begin{frame}{Cristallizzazione}
- \only<1-2>{%
-  \begin{itemize}
-   \item<1-> Simulazioni $NVT$ per $\sim \SI{e2}{ps}$
-   \item<1-> Temperature nell'intervallo \num{500}--\SI{850}{K}
-   \item<2-> Atomo cristallino secondo il parametro d'ordine $\bar{Q}_4$ \\
-      %\begin{flushright}
-       %{\cit{[Sosso et al., J. Phys. Chem. C (2015)]}}
-      %\end{flushright}
-    \item<2-> Spessore dello \emph{slab} cristallino in funzione di $t$
-      \begin{displaymath}
-       L\ped{cr}=N\ped{cr}\frac{d\ped{hkl}}{2N\ped{surf}}
-      \end{displaymath}
-    \item<2-> Velocità di crescita $u=dL\ped{cr}/dt$
-  \end{itemize}
-}
-\only<3>{%
+\begin{frame}{Cristallizzazione nel nanofilo}
   \begin{columns}
    \begin{column}{0.5\textwidth}
-    \includegraphics[width=\textwidth]{Lcr_t_500}
+    \includegraphics[width=\textwidth]{nw_Lcr_500_OK}
    \end{column}
-   %\begin{column}{0.3\textwidth}
-    %\includegraphics[width=\textwidth]{Lcr_t_600}
-   %\end{column}
    \begin{column}{0.5\textwidth}
-    \includegraphics[width=\textwidth]{Lcr_t_700}
+    \includegraphics[width=\textwidth]{nw_Lcr_700_OK}
    \end{column}
   \end{columns}
-}
+  \begin{table}[h]
+   \resizebox*{0.3\textwidth}{!}{%
+    \begin{tabular}{cSS}
+     	\toprule
+     	\rowcolor{themecolor!20!white}
+	T (\si{K}) & \multicolumn{2}{S}{ {u (\si{\metre\per\second})} } \\
+	\cmidrule{2-3}
+		& {\small Nanofilo} & {\small Bulk} \\
+	\midrule
+	\num{500} & 0.76 & 0.77 \\
+	\num{700} & 4.41 & 7.84 \\
+	\bottomrule
+    \end{tabular}}
+  \end{table}
+
 \end{frame}
 
-\begin{frame}{Cristallizzazione}{Velocità di crescita}
+
+
+
+\begin{frame}{Velocità di cristallizzazione}
  Velocità di crescita secondo la \emph{teoria classica della nucleazione}
  %\centering
   \begin{equation*}
-    u(T)= u\ped{kin} \left[ 1- e^{ \left( -\Delta\mu/k_B T\right) } \right]
+    u(T)= \frac{6D}{\lambda} \left[ 1- e^{ \left( -\Delta\mu/k_B T\right) } \right]
   \end{equation*}
-\only<-3>{%
- \begin{columns}[c]
- \onslide<2-3>{%
-  \begin{column}{0.5\textwidth}
-  \centering
-  \begin{displaymath}
-   u\ped{kin}= \frac{6 D}{\lambda}
-  \end{displaymath}
-  {\ev fattore cinetico} che dipende dal coefficiente $D$
-  \end{column}} % end first onslide
-%
- \onslide<3>{%
-  \begin{column}{0.5\textwidth}
-  \centering
-  \begin{displaymath}
-   \Delta\mu = \Delta H_m \frac{(T_m-T)\,2T}{(T_m+T)\,T_m}
-  \end{displaymath}
-  {\ev differenza di potenziale chimico} tra cristallo e amorfo (formula di Thompson--Spaepen)
-  \end{column}} % end second onslide
- \end{columns}
-} % end only
-%
- \only<4->{%
-  \begin{exampleblock}{}
-   \centering
-   $D$ e $\Delta\mu$ hanno andamenti opposti in funzione di $T$ \\
-   La funzione $u(T)$ ha perciò un massimo
-  \end{exampleblock}
-}
+  \begin{center}
+  \begin{itemize}
+   \item $D$ = coefficiente di auto--diffusione
+   \item $\lambda$ = distanza interatomica media ($\sim \SI{3}{\angstrom}$)
+   \item $\Delta\mu$ = differenza di potenziale chimico tra cristallo e liquido
+  \end{itemize}  
+  \end{center}
 \end{frame}
 
 
-\begin{frame}{Cristallizzazione}{Confronto con \gete \emph{bulk}}
-\only<1>{%
+\begin{frame}{Coefficiente di auto--diffusione}
  \begin{columns}
-  \begin{column}{0.4\textwidth}
-   \begin{itemize}
-    \item Modello di $\beta$--\gete bulk (fase cubica)
-    \item Piano esposto all'interfaccia $(100)$
-    \item Dimensioni \\
-	  $a=b=\SI{48.59}{\angstrom}$ \\
-	  $c=\SI{127.91}{\angstrom}$
-    \item \num{10240} atomi
-   \end{itemize}
+  \begin{column}{0.5\textwidth}
+   Calcolato con la \emph{relazione di Einstein}
+   \begin{equation*}
+    \frac{\partial\langle r^2(t)\rangle}{\partial t}=6D
+   \end{equation*}
+   Energia di attivazione
+   \begin{equation*}
+    \begin{split}
+        E_a &= \SI{0.314}{eV}\\
+	E_a\ap{bulk}&=\SI{0.4}{eV}
+    \end{split}
+   \end{equation*}
   \end{column}
-%
-  \begin{column}{0.6\textwidth}
-  \centering
-   \includegraphics[scale=0.18]{m1_long}\quad
-   \includegraphics[scale=0.10]{m1_section}
+  \begin{column}{0.5\textwidth}
+   \includegraphics[scale=0.6]{D_vs_T}
   \end{column}
+
+
  \end{columns}
-}
-%
-\only<2>{%
- \centering
-  Simulazioni NVT a \num{500} e \SI{700}{K}
-  \vspace{0.2cm}
-  \begin{columns}
-   \begin{column}{.5\textwidth}
-   \centering
-    \includegraphics[width=\textwidth]{bulk_Lcr_500}
-   \end{column}
-   \begin{column}{0.5\textwidth}
-   \centering
-    \includegraphics[width=\textwidth]{bulk_Lcr_700}
-   \end{column}
-  \end{columns}
-}
-%
-\only<3>{%
- \centering
-  $u(T)$ per nanofilo e bulk \\[.2cm]
-  \includegraphics[scale=0.70,keepaspectratio]{U_vs_T-BeamerVer}
-}
+
+\end{frame}
+
+
+\begin{frame}{Differenza di potenziale chimico}
+ Differenza di potenziale chimico $\Delta\mu$ tra cristallo e liquido\\[3pt]
+ Formula di {\ev Thompson--Spaepen}
+ \[ \Delta\mu = T_m\Delta S_m \frac{(T_m-T)\,2T}{(T_m+T)\,T_m} \]
+ \begin{itemize}
+ \item $T_m\Delta S_m$ è il calore latente di fusione
+ \item $\Delta S_m (\text{bulk})=\num{0.186}\,\si{meV/\text{atomo}}$ da simulazioni MD--NN
+ \end{itemize}
+ 
+\end{frame}
+
+
+\begin{frame}{Velocità di cristallizzazione}{Confronto tra nanofilo e bulk}
+ Abbiamo osservato una {\ev diminuzione} della velocità di crescita\\[6pt]
+ Supponiamo uguale il valore di $\Delta S_m$ per nanofilo e bulk
+ \begin{equation*}
+  \begin{split}
+   u\ped{N} &= \frac{6D\ped{N}}{\lambda} \left( 1- e^{-\Delta\mu\ped{N}/k_B T} \right) \\[6pt]
+   u\ped{B} &= \frac{6D\ped{B}}{\lambda} \left( 1- e^{-\Delta\mu\ped{B}/k_B T} \right)
+  \end{split}
+ \end{equation*}
+ \begin{columns}[b]
+  \begin{column}{0.5\textwidth}
+   \begin{displaymath}
+      \frac{u\ped{N}}{u\ped{B}}(\num{700}\,K) \approx \textcolor{themecolor}{\num{1.61}}
+   \end{displaymath}
+  \end{column}
+  \begin{column}{0.5\textwidth}
+   \begin{displaymath}
+    \text{Da simulazioni MD} \approx \textcolor{themecolor}{\num{1.78}}
+   \end{displaymath}
+  \end{column}
+
+ \end{columns}
+
+
 \end{frame}
 
 
 
-%%% BACKUP FRAMES
+
+%%% BACKUP SLIDES
 \appendix
 
 \begin{frame}{Parametro d'ordine}
@@ -585,6 +668,20 @@ Informazioni sull'intorno atomico entro un certo raggio di \emph{cutoff} (terza 
  \end{equation*}
 
 \end{frame}
+
+
+%\begin{frame}{Coefficiente di auto--diffusione}{Calcolo}
+% MSD e fit lineare.
+%\end{frame}
+
+\begin{frame}{Cristallizzazione}{Confronto tra bulk e nanofilo}
+\begin{center}
+ \includegraphics[scale=0.7]{u_vs_T_withSosso}\\[0.2cm]
+ {\cit{[Sosso et al., J. Phys. Chem. Lett. 4, 4241 (2013)]}}
+\end{center}
+\end{frame}
+
+
 
 
 
