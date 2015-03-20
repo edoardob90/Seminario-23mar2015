@@ -34,6 +34,7 @@
   \usefonttheme{professionalfonts}
   \setbeamertemplate{navigation symbols}{}
   \setbeamertemplate{footline}[frame number]
+  \setbeameroption{show only notes}
 }
 
 
@@ -116,6 +117,11 @@ Leghe di calcogenuri: {\ev \gete}, \textcolor{themecolor}{\textbf{\ce{Ge2Sb2Te5}
 Rapida e reversibile transizione tra cristallo e amorfo ($\sim\SI{50}{ns}$)
 }
 \end{frame}
+\note{%
+I Materiali a Cambiamento di Fase sono di grande interesse tecnologico nella realizzazione di memorie non volatili ottiche, utilizzate in supporti come DVD e Blu--Ray, e memorie elettroniche di nuova concezione chiamate Memorie a Cambiamento di Fase.\\
+Per le le memorie elettroniche, i materiali più utilizzati sono alcune leghe di calcogenuri basate su tellurio, come il germanio-tellurio o il germanio 2 antimonio 2 tellurio 5 o GST, il quale è attualmente impiegato come materiale attivo nelle PCM.\\
+Tutti questi materiali mostrano una veloce e reversibile transizione tra la fase amorfa e la fase cristallina, che dura qualche decina di nanosecondi.
+}
 
 
 \begin{frame}{Materiali a cambiamento di fase}
@@ -148,6 +154,16 @@ La transizione è indotta per riscaldamento (impulsi laser/corrente)
 \end{center}
 \end{table}
 \end{frame}
+\note{%
+The two states of these systems, that is crystal and amorphous, may be associated to
+zero and one bits. In fact these materials show a large difference in properties between
+the two phases, in particular, roughly speaking, the crystal is metallic and the amorphous 
+is insulating.\\
+A resistivity change of three orders of magnitude is exploited in PCMs and 
+a reflectivity change of about 30\% is used in DVD\---RAM.\\
+In these devices the phase transition is induced by heating using an electrical pulse in PCMs
+and a laser pulse in DVDs.
+}
 
 
 \begin{frame}{Cella PCM}
@@ -219,7 +235,7 @@ La transizione è indotta per riscaldamento (impulsi laser/corrente)
 {\ev Aprile 2010} 
 \hspace{10em}\raisebox{-1ex}{\includegraphics[angle=0, width=0.2\textwidth]{PCM_numonyx.eps}}\\
 \vspace{1ex}
-\textcolor{themecolor}{Numonyx} (ora \textcolor{themecolor}{Micron}) ha commercializzato un dispositivo PCM di 90~nm\\
+\textcolor{themecolor}{Numonyx} (ora acquisita da \textcolor{themecolor}{Micron}) ha commercializzato un dispositivo PCM di 90~nm\\
 %Research center based in Agrate Brianza\\
 \vspace{3ex}
 {\ev Luglio 2012}\\
@@ -289,7 +305,7 @@ dispositivo PCM Micron %(NOR replacement)\\
    \item Il meccanismo di cristallizzazione dipende dalla dimensione della fase amorfa, dalla temperatura e dal materiale
    \item Nelle PCM la fase amorfa è portata a $T$ molto maggiori di $T\ped{glass}$ (liquido sotto--raffreddato)
    \item La cinetica di cristallizzazione può cambiare da \emph{bulk} a nanofili \\[3pt]
-      $T\ped{fus}$ e $T\ped{glass}$ dipendono dalle dimensioni
+      $T\ped{melt}$ e $T\ped{glass}$ dipendono dalle dimensioni
   \end{itemize}
 
 }
@@ -348,7 +364,7 @@ dispositivo PCM Micron %(NOR replacement)\\
  \end{columns}
  \vspace{0.2cm}
  \centering
- Simulazioni di {\ev dinamica molecolare} del processo di cristallizzazione con potenziale interatomico
+ Simulazioni di {\ev dinamica molecolare} del processo di cristallizzazione% con potenziale interatomico
 \end{frame}
 
 
@@ -440,8 +456,8 @@ Informazioni sull'intorno atomico entro un certo raggio di \emph{cutoff} (terza 
   \begin{column}{0.5\textwidth}
    \begin{itemize}
     \item Il potenziale NN descrive accuratamente le proprietà della fase liquida/amorfa del \gete
-    \item Coefficiente di diffusione $D$: {\ev \SI{4.29e-5}{\square\centi\metre\per\second}}\\ (DFT~\SI{4.29e-5}{\square\centi\metre\per\second})
-    \item $T\ped{fus}$: {\ev\SI{1001}{K}}\\ (exp.~\SI{998}{K})
+    \item Coefficiente di diffusione $D$ {\ev \SI{4.29e-5}{\square\centi\metre\per\second}}\\ (DFT~\SI{4.29e-5}{\square\centi\metre\per\second})
+    \item $T\ped{m}=$ {\ev\SI{1001}{K}}\\ (exp.~\SI{998}{K})
    \end{itemize}
   \end{column}
  \end{columns}
@@ -494,7 +510,7 @@ Interfaccia tra cristallo e liquido sotto--raffreddato
 \end{frame}
 
 \begin{frame}{Temperatura di fusione}
-%\centering
+\centering
 Stima della temperatura di fusione nei nanofili\\[12pt]
 \begin{columns}
 \begin{column}{0.4\textwidth}
@@ -504,7 +520,7 @@ Stima della temperatura di fusione nei nanofili\\[12pt]
 \begin{column}{0.6\textwidth}
 %\begin{itemize}
 %\item
- 4 simulazioni $NVT$ a \num{800}--\num{850}--\num{900}--\SI{950}{K}:\\[3pt]
+ 4 simulazioni $NVT$ a \num{800}--\num{850}--\num{900}--\SI{950}{K}%\\[3pt]
   \begin{itemize}
     \item a \SI{800}{K} {\ev cristallizzazione}
     \item a \SI{850}{K} {\ev fusione}
@@ -512,11 +528,11 @@ Stima della temperatura di fusione nei nanofili\\[12pt]
 %\end{itemize}
 \end{column}
 \end{columns}
-\onslide<2->{%
-\begin{exampleblock}{Riduzione di T\ped{fus}}
+\visible<2->{%
+\begin{exampleblock}{Riduzione di T\ped{melt}}
 \centering
-  $\SI{800}{K} < T\ped{fus}^N < \SI{850}{K}$\\[6pt]
-  $T\ped{fus}^B \sim \SI{1000}{K}$
+  $\SI{800}{K} < T\ped{m}^N < \SI{850}{K}$\\[6pt]
+  $T\ped{m}^B \sim \SI{1000}{K}$
 \end{exampleblock}
 }
 
@@ -598,13 +614,29 @@ Stima della temperatura di fusione nei nanofili\\[12pt]
    Energia di attivazione
    \begin{equation*}
     \begin{split}
-        E_a &= \SI{0.314}{eV}\\
-	E_a\ap{bulk}&=\SI{0.4}{eV}
+        &E_a = \SI{0.314}{eV}\\
+	&E_a\ap{bulk} = \SI{0.4}{eV}
     \end{split}
    \end{equation*}
   \end{column}
   \begin{column}{0.5\textwidth}
+  \centering
    \includegraphics[scale=0.6]{D_vs_T}
+   \begin{table}[h]
+   \begin{center}
+   \resizebox{0.6\textwidth}{!}{%
+    \begin{tabular}{ccc}
+     	\toprule
+     	\rowcolor{themecolor!20!white}
+	T (\si{K}) & \multicolumn{2}{c}{D (\SI{e-6}{\square\centi\metre\per\second})} \\
+		& {\small Nanofilo} & {\small Bulk} \\
+	\midrule
+	\num{500} & \num{1.78} & \num{1.25} \\
+	\num{700} & \num{18.9} & \num{17.5} \\
+	\bottomrule
+    \end{tabular}}
+    \end{center}
+  \end{table}
   \end{column}
 
 
@@ -619,13 +651,14 @@ Stima della temperatura di fusione nei nanofili\\[12pt]
  \[ \Delta\mu = T_m\Delta S_m \frac{(T_m-T)\,2T}{(T_m+T)\,T_m} \]
  \begin{itemize}
  \item $T_m\Delta S_m$ è il calore latente di fusione
- \item $\Delta S_m (\text{bulk})=\num{0.186}\,\si{meV/\text{atomo}}$ da simulazioni MD--NN
+ \item $\Delta S_m (\text{bulk})=\textcolor{themecolor}{\num{0.186}\,\si{meV/\text{atomo}}}$ da simulazioni NN--MD
  \end{itemize}
  
 \end{frame}
 
 
 \begin{frame}{Velocità di cristallizzazione}{Confronto tra nanofilo e bulk}
+\only<1-2>{%
  Abbiamo osservato una {\ev diminuzione} della velocità di crescita\\[6pt]
  Supponiamo uguale il valore di $\Delta S_m$ per nanofilo e bulk
  \begin{equation*}
@@ -634,6 +667,7 @@ Stima della temperatura di fusione nei nanofili\\[12pt]
    u\ped{B} &= \frac{6D\ped{B}}{\lambda} \left( 1- e^{-\Delta\mu\ped{B}/k_B T} \right)
   \end{split}
  \end{equation*}
+\onslide<2>{%
  \begin{columns}[b]
   \begin{column}{0.5\textwidth}
    \begin{displaymath}
@@ -645,12 +679,36 @@ Stima della temperatura di fusione nei nanofili\\[12pt]
     \text{Da simulazioni MD} \approx \textcolor{themecolor}{\num{1.78}}
    \end{displaymath}
   \end{column}
-
  \end{columns}
+ }
+}
+\only<3>{%
+ \centering
+ \includegraphics[scale=0.7]{u_vs_T_OnlyMine}
+}
 
 
 \end{frame}
 
+
+\section{Conclusioni}
+
+\begin{frame}{Conclusioni}
+ \begin{itemize}[<+->]
+ 	\item Cinetica di cristallizzazione in nanofili di \gete
+ 	\item Riduzione di $T_m$ da $\SI{1001}{K}$ a $\approx\SI{830}{K}$
+ 	\item Riduzione della velocità di cristallizzazione al più di un fattore 2, ben descritta dall'espressione classica (CNT) per la velocità di crescita
+ 	\item Cinetica di cristallizzazione compatibile ad utilizzo di nanofili ultra--scalati nelle celle PCM
+ \end{itemize}
+\centering
+\vspace{0.5cm}
+\onslide<4->{Progetto Europeo {\ev FP7:Synapse}}
+
+	
+\end{frame}
+\note{In questo lavoro di tesi abbiamo studiato la cinetica di cristallizzazione in nanofili di gete, osservando una riduzione della temperatura di fusione da 1000 kelvin del gete bulk a circa 830 kelvin nei nanofili. Questa riduzione è responsabile della minore velocità di cristallizzazione osservata nei nanofili, che risulta essere al più un fattore 2 inferiore alla velocità calcolata nel bulk. Inoltre, l'andamento della velocità di crescita in funzione della temperatura è ben descritto dall'espressione classica.
+Possiamo perciò concludere che i risultati osservati suggeriscono che nanofili ultra--scalati fino a 8 nm di diametro possano essere efficacemente impiegati nelle celle PCM. 
+}
 
 
 
