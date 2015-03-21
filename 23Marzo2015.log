@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.13)  20 MAR 2015 12:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.13)  21 MAR 2015 23:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -569,10 +569,7 @@ Package: beamercolorthemeorchid 2010/06/17  (rcs-revision d02a7cf4d8ae)
 Package: beamerinnerthemerectangles 2010/06/17  (rcs-revision d02a7cf4d8ae)
 )) (/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/themes/font/beamerfontthemeprofessionalfonts.sty
 Package: beamerfontthemeprofessionalfonts 2010/06/17  (rcs-revision d02a7cf4d8ae)
-)
-No auxiliary output files.
-
-(./Preamble.tex (/usr/local/texlive/2014/texmf-dist/tex/latex/libertine/libertine.sty
+) (./Preamble.tex (/usr/local/texlive/2014/texmf-dist/tex/latex/libertine/libertine.sty
 Package: libertine 2014/11/25 (Bob Tennent) Supports Libertine and Biolinum fonts for all LaTeX engines.
  (/usr/local/texlive/2014/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
@@ -669,7 +666,8 @@ LaTeX Info: Redefining \sffamily on input line 53.
 LaTeX Info: Redefining \ttfamily on input line 70.
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
-) (/usr/local/texlive/texmf-local/tex/latex/MinionPro/fontaxes.sty
+)
+(/usr/local/texlive/texmf-local/tex/latex/MinionPro/fontaxes.sty
 Package: fontaxes 2007/03/31 v0.2b Font selection axes
 LaTeX Info: Redefining \upshape on input line 26.
 LaTeX Info: Redefining \itshape on input line 28.
@@ -1038,8 +1036,7 @@ LaTeX Info: Redefining \setlength on input line 75.
 LaTeX Info: Redefining \addtolength on input line 76.
 \calc@Ccount=\count167
 \calc@Cskip=\skip62
-)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/l3kernel/expl3.sty
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2015/02/13 v5524 L3 programming layer (loader) 
  (/usr/local/texlive/2014/texmf-dist/tex/latex/l3kernel/expl3-code.tex
 Package: expl3 2015/02/13 v5524 L3 programming layer (code) 
@@ -1195,7 +1192,8 @@ Package caption Info: beamer document class.
 Package caption Info: hyperref package is loaded.
 Package caption Info: Hyperref support is turned off
 (caption)             because hyperref has stopped early.
-) (/usr/local/texlive/2014/texmf-dist/tex/latex/siunitx/siunitx.sty (/usr/local/texlive/2014/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/siunitx/siunitx.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2014/11/25 v5471 L3 Experimental document command parser
 \l__xparse_current_arg_int=\count194
 \l__xparse_m_args_int=\count195
@@ -1412,8 +1410,7 @@ Package: pgffor 2013/12/13 v3.0.0 (rcs-revision 1.25)
 \pgffor@skip=\dimen316
 \pgffor@stack=\toks51
 \pgffor@toks=\toks52
-))
-(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+)) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2013/12/13 v3.0.0 (rcs-revision 1.142)
  (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
@@ -1447,7 +1444,8 @@ File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.0 (rcs-revision 1.2)
 File: tikzlibraryshapes.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
  (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex
 File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
- (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geometric.code.tex
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geometric.code.tex
 File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.0 (rcs-revision 1.1)
 )) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.misc.code.tex
 File: tikzlibraryshapes.misc.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
@@ -1490,8 +1488,7 @@ File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
  (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2013/09/23 v3.0.0 (rcs-revision 1.16)
 \arrowsize=\dimen324
-))
-(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshadows.code.tex
+)) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshadows.code.tex
 File: tikzlibraryshadows.code.tex 2008/01/13 v3.0.0 (rcs-revision 1.3)
  (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfadings.code.tex
 File: tikzlibraryfadings.code.tex 2009/11/15 v3.0.0 (rcs-revision 1.2)
@@ -1520,47 +1517,45 @@ Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 ))
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 54.
+(hyperref)                removing `\\' on input line 56.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\new@ifnextchar' on input line 54.
+(hyperref)                removing `\new@ifnextchar' on input line 56.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\medskipamount' on input line 54.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\__mhchem_ce:n' on input line 80.
+(hyperref)                removing `\medskipamount' on input line 56.
 
 (./23Marzo2015.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 80.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 80.
+\openout1 = `23Marzo2015.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 82.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 82.
  (/usr/local/texlive/2014/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Try loading font information for T1+LinuxBiolinumT-TLF on input line 80.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Try loading font information for T1+LinuxBiolinumT-TLF on input line 82.
  (/usr/local/texlive/2014/texmf-dist/tex/latex/libertine/T1LinuxBiolinumT-TLF.fd
 File: T1LinuxBiolinumT-TLF.fd 2012/11/26 (autoinst) Font definitions for T1/LinuxBiolinumT-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 80.
+(Font)              scaled to size 10.95pt on input line 82.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1621,7 +1616,7 @@ Package grfext Info: Graphics extension search list:
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box103
-Package hyperref Info: Link coloring OFF on input line 80.
+Package hyperref Info: Link coloring OFF on input line 82.
  (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
  (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -1629,10 +1624,14 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count314
 )
-LaTeX Info: Redefining \ref on input line 80.
-LaTeX Info: Redefining \pageref on input line 80.
-LaTeX Info: Redefining \nameref on input line 80.
- (./23Marzo2015.out) (./23Marzo2015.out) (/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/translator/dicts/translator-basic-dictionary/translator-basic-dictionary-English.dict
+LaTeX Info: Redefining \ref on input line 82.
+LaTeX Info: Redefining \pageref on input line 82.
+LaTeX Info: Redefining \nameref on input line 82.
+ (./23Marzo2015.out) (./23Marzo2015.out)
+\@outlinefile=\write5
+\openout5 = `23Marzo2015.out'.
+
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/translator/dicts/translator-basic-dictionary/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/translator/dicts/translator-bibliography-dictionary/translator-bibliography-dictionary-English.dict
 Dictionary: translator-bibliography-dictionary, Language: English 
@@ -1645,11 +1644,11 @@ Dictionary: translator-numbers-dictionary, Language: English
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/translator/dicts/translator-theorem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 80.
+LaTeX Info: Redefining \includegraphics on input line 82.
 \c@mv@tabular=\count315
 \c@mv@boldtabular=\count316
-LaTeX Info: Redefining \it@ocap on input line 80.
-LaTeX Info: Redefining \it@ccap on input line 80.
+LaTeX Info: Redefining \it@ocap on input line 82.
+LaTeX Info: Redefining \it@ccap on input line 82.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: Incompatible package detected (regarding \caption).
 (caption)             \caption = macro:->\ifx \@captype \@undefined \@latex@error {\noexpand \caption outside figure or table}\@ehd \expandafter \@gobble \else \refstepcounter \@captype \expandafter \@firstofone \fi {\@dblarg {\@caption \@captype }}.
@@ -1665,85 +1664,72 @@ Package caption Info: End \AtBeginDocument code.
 File: siunitx-abbreviations.cfg 2015/01/21 v2.6e siunitx: Abbreviated units
 ) (./23Marzo2015.nav)
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 80.
-LaTeX Font Info:    Try loading font information for OT1+LinuxBiolinumT-TLF on input line 80.
+(Font)              scaled to size 6.0pt on input line 82.
+LaTeX Font Info:    Try loading font information for OT1+LinuxBiolinumT-TLF on input line 82.
  (/usr/local/texlive/2014/texmf-dist/tex/latex/libertine/OT1LinuxBiolinumT-TLF.fd
 File: OT1LinuxBiolinumT-TLF.fd 2012/11/26 (autoinst) Font definitions for OT1/LinuxBiolinumT-TLF.
 )
 LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 80.
+(Font)              scaled to size 6.0pt on input line 82.
 LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 5.0pt on input line 80.
-LaTeX Font Info:    Try loading font information for U+zeur on input line 80.
+(Font)              scaled to size 5.0pt on input line 82.
+LaTeX Font Info:    Try loading font information for U+zeur on input line 82.
  (/usr/local/texlive/2014/texmf-dist/tex/latex/eulervm/uzeur.fd
 File: uzeur.fd 2005/01/11 v4.0 (WaS)
 )
-LaTeX Font Info:    Try loading font information for U+zeus on input line 80.
+LaTeX Font Info:    Try loading font information for U+zeus on input line 82.
  (/usr/local/texlive/2014/texmf-dist/tex/latex/eulervm/uzeus.fd
 File: uzeus.fd 2005/01/11 v4.0 (WaS)
 )
-LaTeX Font Info:    Try loading font information for U+zeuex on input line 80.
+LaTeX Font Info:    Try loading font information for U+zeuex on input line 82.
  (/usr/local/texlive/2014/texmf-dist/tex/latex/eulervm/uzeuex.fd
 File: uzeuex.fd 2005/01/11 v4.0 (WaS)
 )
 LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 6.0pt on input line 80.
+(Font)              scaled to size 6.0pt on input line 82.
 LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 5.0pt on input line 80.
+(Font)              scaled to size 5.0pt on input line 82.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 5.0pt on input line 80.
+(Font)              scaled to size 5.0pt on input line 82.
 \c__siunitx_mathsf_int=\count317
 LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 80.
+(Font)              scaled to size 10.95pt on input line 82.
 LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 80.
+(Font)              scaled to size 8.0pt on input line 82.
 LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 80.
+(Font)              scaled to size 10.95pt on input line 82.
 LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 8.0pt on input line 80.
+(Font)              scaled to size 8.0pt on input line 82.
 \c__siunitx_mathtt_int=\count318
-LaTeX Font Info:    Try loading font information for OT1+LinuxLibertineMonoT-TLF on input line 80.
+LaTeX Font Info:    Try loading font information for OT1+LinuxLibertineMonoT-TLF on input line 82.
  (/usr/local/texlive/2014/texmf-dist/tex/latex/libertine/OT1LinuxLibertineMonoT-TLF.fd
 File: OT1LinuxLibertineMonoT-TLF.fd 2012/12/06 (autoinst) Font definitions for OT1/LinuxLibertineMonoT-TLF.
 )
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineMonoT-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 80.
+(Font)              scaled to size 10.95pt on input line 82.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineMonoT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 80.
+(Font)              scaled to size 8.0pt on input line 82.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineMonoT-TLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 80.
+(Font)              scaled to size 6.0pt on input line 82.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 84.
-LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 84.
-LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 84.
-LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 84.
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineMonoT-TLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 84.
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineMonoT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 84.
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineMonoT-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 84.
-LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 84.
-LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 84.
-LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 7.0pt on input line 84.
+(Font)              scaled to size 14.4pt on input line 86.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 84.
-LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 84.
+(Font)              scaled to size 10.0pt on input line 86.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 84.
+(Font)              scaled to size 10.0pt on input line 86.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 84.
+(Font)              scaled to size 8.0pt on input line 86.
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 4.0pt on input line 86.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineMonoT-TLF/m/n' will be
+(Font)              scaled to size 5.0pt on input line 86.
+ [1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+]
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 119.
+(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 125.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 119.
+(Font)              scaled to size 10.95pt on input line 125.
 Package epstopdf Info: Source file: <Immagini/DVD.eps>
 (epstopdf)                    date: 2015-03-19 20:22:02
 (epstopdf)                    size: 13418981 bytes
@@ -1751,12 +1737,12 @@ Package epstopdf Info: Source file: <Immagini/DVD.eps>
 (epstopdf)                    date: 2015-03-19 20:22:02
 (epstopdf)                    size: 883920 bytes
 (epstopdf)             Command: <repstopdf --outfile=Immagini/DVD-eps-converted-to.pdf Immagini/DVD.eps>
-(epstopdf)             \includegraphics on input line 119.
+(epstopdf)             \includegraphics on input line 125.
 Package epstopdf Info: Output file is already uptodate.
- <Immagini/DVD-eps-converted-to.pdf, id=66, 2060.69875pt x 1438.37375pt>
+ <Immagini/DVD-eps-converted-to.pdf, id=84, 2060.69875pt x 1438.37375pt>
 File: Immagini/DVD-eps-converted-to.pdf Graphic file (type pdf)
  <use Immagini/DVD-eps-converted-to.pdf>
-Package pdftex.def Info: Immagini/DVD-eps-converted-to.pdf used on input line 119.
+Package pdftex.def Info: Immagini/DVD-eps-converted-to.pdf used on input line 125.
 (pdftex.def)             Requested size: 2060.69374pt x 1438.37025pt.
 Package epstopdf Info: Source file: <Immagini/PCM.eps>
 (epstopdf)                    date: 2015-03-19 20:22:02
@@ -1765,21 +1751,24 @@ Package epstopdf Info: Source file: <Immagini/PCM.eps>
 (epstopdf)                    date: 2015-03-19 20:22:02
 (epstopdf)                    size: 89085 bytes
 (epstopdf)             Command: <repstopdf --outfile=Immagini/PCM-eps-converted-to.pdf Immagini/PCM.eps>
-(epstopdf)             \includegraphics on input line 119.
+(epstopdf)             \includegraphics on input line 125.
 Package epstopdf Info: Output file is already uptodate.
- <Immagini/PCM-eps-converted-to.pdf, id=67, 529.98pt x 379.4175pt>
+ <Immagini/PCM-eps-converted-to.pdf, id=85, 529.98pt x 379.4175pt>
 File: Immagini/PCM-eps-converted-to.pdf Graphic file (type pdf)
  <use Immagini/PCM-eps-converted-to.pdf>
-Package pdftex.def Info: Immagini/PCM-eps-converted-to.pdf used on input line 119.
+Package pdftex.def Info: Immagini/PCM-eps-converted-to.pdf used on input line 125.
 (pdftex.def)             Requested size: 529.97868pt x 379.41656pt.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/bx/n' in size <8> not available
-(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 119.
+(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 125.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 8.0pt on input line 119.
+(Font)              scaled to size 8.0pt on input line 125.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/bx/n' in size <6> not available
-(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 119.
+(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 125.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 6.0pt on input line 119.
+(Font)              scaled to size 6.0pt on input line 125.
+ [2
+
+ <./Immagini/DVD-eps-converted-to.pdf> <./Immagini/PCM-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Immagini/DVD.eps>
 (epstopdf)                    date: 2015-03-19 20:22:02
 (epstopdf)                    size: 13418981 bytes
@@ -1787,11 +1776,11 @@ Package epstopdf Info: Source file: <Immagini/DVD.eps>
 (epstopdf)                    date: 2015-03-19 20:22:02
 (epstopdf)                    size: 883920 bytes
 (epstopdf)             Command: <repstopdf --outfile=Immagini/DVD-eps-converted-to.pdf Immagini/DVD.eps>
-(epstopdf)             \includegraphics on input line 119.
+(epstopdf)             \includegraphics on input line 125.
 Package epstopdf Info: Output file is already uptodate.
 File: Immagini/DVD-eps-converted-to.pdf Graphic file (type pdf)
  <use Immagini/DVD-eps-converted-to.pdf>
-Package pdftex.def Info: Immagini/DVD-eps-converted-to.pdf used on input line 119.
+Package pdftex.def Info: Immagini/DVD-eps-converted-to.pdf used on input line 125.
 (pdftex.def)             Requested size: 2060.69374pt x 1438.37025pt.
 Package epstopdf Info: Source file: <Immagini/PCM.eps>
 (epstopdf)                    date: 2015-03-19 20:22:02
@@ -1800,38 +1789,20 @@ Package epstopdf Info: Source file: <Immagini/PCM.eps>
 (epstopdf)                    date: 2015-03-19 20:22:02
 (epstopdf)                    size: 89085 bytes
 (epstopdf)             Command: <repstopdf --outfile=Immagini/PCM-eps-converted-to.pdf Immagini/PCM.eps>
-(epstopdf)             \includegraphics on input line 119.
+(epstopdf)             \includegraphics on input line 125.
 Package epstopdf Info: Output file is already uptodate.
 File: Immagini/PCM-eps-converted-to.pdf Graphic file (type pdf)
  <use Immagini/PCM-eps-converted-to.pdf>
-Package pdftex.def Info: Immagini/PCM-eps-converted-to.pdf used on input line 119.
+Package pdftex.def Info: Immagini/PCM-eps-converted-to.pdf used on input line 125.
 (pdftex.def)             Requested size: 529.97868pt x 379.41656pt.
-LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 124.
- [1
+ [3
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Immagini/DVD-eps-converted-to.pdf> <./Immagini/PCM-eps-converted-to.pdf>]
-Overfull \hbox (25.44046pt too wide) in paragraph at lines 156--156
+]
+Overfull \hbox (25.44046pt too wide) in paragraph at lines 162--162
  [][] 
  []
 
-[2
-
-
-
+[4
 
 ]
 Package epstopdf Info: Source file: <Immagini/PCMschem.eps>
@@ -1843,17 +1814,32 @@ Package epstopdf Info: Source file: <Immagini/PCMschem.eps>
 (epstopdf)             Command: <repstopdf --outfile=Immagini/PCMschem-eps-converted-to.pdf Immagini/PCMschem.eps>
 (epstopdf)             \includegraphics on input line 182.
 Package epstopdf Info: Output file is already uptodate.
- <Immagini/PCMschem-eps-converted-to.pdf, id=96, 713.66624pt x 579.16376pt>
+ <Immagini/PCMschem-eps-converted-to.pdf, id=124, 713.66624pt x 579.16376pt>
 File: Immagini/PCMschem-eps-converted-to.pdf Graphic file (type pdf)
  <use Immagini/PCMschem-eps-converted-to.pdf>
 Package pdftex.def Info: Immagini/PCMschem-eps-converted-to.pdf used on input line 182.
 (pdftex.def)             Requested size: 142.73071pt x 115.83069pt.
+ [5
+
+ <./Immagini/PCMschem-eps-converted-to.pdf>]
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 231.
+(Font)              scaled to size 10.95pt on input line 209.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/bx/n' in size <10> not available
-(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 231.
+(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/n' tried instead on input line 209.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 231.
+(Font)              scaled to size 10.0pt on input line 209.
+LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 209.
+LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 7.0pt on input line 209.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineMonoT-TLF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 209.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineMonoT-TLF/m/n' will be
+(Font)              scaled to size 7.0pt on input line 209.
+LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/b/n' will be
+(Font)              scaled to size 10.0pt on input line 209.
+LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/b/n' will be
+(Font)              scaled to size 7.0pt on input line 209.
 Package epstopdf Info: Source file: <Immagini/IV1.eps>
 (epstopdf)                    date: 2015-03-19 20:22:02
 (epstopdf)                    size: 270343 bytes
@@ -1861,13 +1847,16 @@ Package epstopdf Info: Source file: <Immagini/IV1.eps>
 (epstopdf)                    date: 2015-03-19 20:22:02
 (epstopdf)                    size: 95329 bytes
 (epstopdf)             Command: <repstopdf --outfile=Immagini/IV1-eps-converted-to.pdf Immagini/IV1.eps>
-(epstopdf)             \includegraphics on input line 231.
+(epstopdf)             \includegraphics on input line 209.
 Package epstopdf Info: Output file is already uptodate.
- <Immagini/IV1-eps-converted-to.pdf, id=97, 1113.15875pt x 824.07875pt>
+ <Immagini/IV1-eps-converted-to.pdf, id=138, 1113.15875pt x 824.07875pt>
 File: Immagini/IV1-eps-converted-to.pdf Graphic file (type pdf)
  <use Immagini/IV1-eps-converted-to.pdf>
-Package pdftex.def Info: Immagini/IV1-eps-converted-to.pdf used on input line 231.
+Package pdftex.def Info: Immagini/IV1-eps-converted-to.pdf used on input line 209.
 (pdftex.def)             Requested size: 1113.15605pt x 824.07674pt.
+ [6
+
+ <./Immagini/IV1-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Immagini/IVr.eps>
 (epstopdf)                    date: 2015-03-19 20:22:02
 (epstopdf)                    size: 280828 bytes
@@ -1875,13 +1864,16 @@ Package epstopdf Info: Source file: <Immagini/IVr.eps>
 (epstopdf)                    date: 2015-03-19 20:22:02
 (epstopdf)                    size: 99964 bytes
 (epstopdf)             Command: <repstopdf --outfile=Immagini/IVr-eps-converted-to.pdf Immagini/IVr.eps>
-(epstopdf)             \includegraphics on input line 231.
+(epstopdf)             \includegraphics on input line 209.
 Package epstopdf Info: Output file is already uptodate.
- <Immagini/IVr-eps-converted-to.pdf, id=98, 1113.15875pt x 824.07875pt>
+ <Immagini/IVr-eps-converted-to.pdf, id=154, 1113.15875pt x 824.07875pt>
 File: Immagini/IVr-eps-converted-to.pdf Graphic file (type pdf)
  <use Immagini/IVr-eps-converted-to.pdf>
-Package pdftex.def Info: Immagini/IVr-eps-converted-to.pdf used on input line 231.
+Package pdftex.def Info: Immagini/IVr-eps-converted-to.pdf used on input line 209.
 (pdftex.def)             Requested size: 1113.15605pt x 824.07674pt.
+ [7
+
+ <./Immagini/IVr-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Immagini/IVres.eps>
 (epstopdf)                    date: 2015-03-19 20:22:02
 (epstopdf)                    size: 281046 bytes
@@ -1889,13 +1881,16 @@ Package epstopdf Info: Source file: <Immagini/IVres.eps>
 (epstopdf)                    date: 2015-03-19 20:22:02
 (epstopdf)                    size: 99377 bytes
 (epstopdf)             Command: <repstopdf --outfile=Immagini/IVres-eps-converted-to.pdf Immagini/IVres.eps>
-(epstopdf)             \includegraphics on input line 231.
+(epstopdf)             \includegraphics on input line 209.
 Package epstopdf Info: Output file is already uptodate.
- <Immagini/IVres-eps-converted-to.pdf, id=99, 1113.15875pt x 824.07875pt>
+ <Immagini/IVres-eps-converted-to.pdf, id=169, 1113.15875pt x 824.07875pt>
 File: Immagini/IVres-eps-converted-to.pdf Graphic file (type pdf)
  <use Immagini/IVres-eps-converted-to.pdf>
-Package pdftex.def Info: Immagini/IVres-eps-converted-to.pdf used on input line 231.
+Package pdftex.def Info: Immagini/IVres-eps-converted-to.pdf used on input line 209.
 (pdftex.def)             Requested size: 1113.15605pt x 824.07674pt.
+ [8
+
+ <./Immagini/IVres-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Immagini/IVs.eps>
 (epstopdf)                    date: 2015-03-19 20:22:02
 (epstopdf)                    size: 278641 bytes
@@ -1903,13 +1898,16 @@ Package epstopdf Info: Source file: <Immagini/IVs.eps>
 (epstopdf)                    date: 2015-03-19 20:22:02
 (epstopdf)                    size: 97233 bytes
 (epstopdf)             Command: <repstopdf --outfile=Immagini/IVs-eps-converted-to.pdf Immagini/IVs.eps>
-(epstopdf)             \includegraphics on input line 231.
+(epstopdf)             \includegraphics on input line 209.
 Package epstopdf Info: Output file is already uptodate.
- <Immagini/IVs-eps-converted-to.pdf, id=100, 1113.15875pt x 824.07875pt>
+ <Immagini/IVs-eps-converted-to.pdf, id=184, 1113.15875pt x 824.07875pt>
 File: Immagini/IVs-eps-converted-to.pdf Graphic file (type pdf)
  <use Immagini/IVs-eps-converted-to.pdf>
-Package pdftex.def Info: Immagini/IVs-eps-converted-to.pdf used on input line 231.
+Package pdftex.def Info: Immagini/IVs-eps-converted-to.pdf used on input line 209.
 (pdftex.def)             Requested size: 1113.15605pt x 824.07674pt.
+ [9
+
+ <./Immagini/IVs-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Immagini/PCM_numonyx.eps>
 (epstopdf)                    date: 2015-03-19 20:22:02
 (epstopdf)                    size: 308455 bytes
@@ -1917,12 +1915,12 @@ Package epstopdf Info: Source file: <Immagini/PCM_numonyx.eps>
 (epstopdf)                    date: 2015-03-19 20:22:02
 (epstopdf)                    size: 15538 bytes
 (epstopdf)             Command: <repstopdf --outfile=Immagini/PCM_numonyx-eps-converted-to.pdf Immagini/PCM_numonyx.eps>
-(epstopdf)             \includegraphics on input line 255.
+(epstopdf)             \includegraphics on input line 239.
 Package epstopdf Info: Output file is already uptodate.
- <Immagini/PCM_numonyx-eps-converted-to.pdf, id=101, 261.97874pt x 193.72375pt>
+ <Immagini/PCM_numonyx-eps-converted-to.pdf, id=198, 261.97874pt x 193.72375pt>
 File: Immagini/PCM_numonyx-eps-converted-to.pdf Graphic file (type pdf)
  <use Immagini/PCM_numonyx-eps-converted-to.pdf>
-Package pdftex.def Info: Immagini/PCM_numonyx-eps-converted-to.pdf used on input line 255.
+Package pdftex.def Info: Immagini/PCM_numonyx-eps-converted-to.pdf used on input line 239.
 (pdftex.def)             Requested size: 261.9781pt x 193.72327pt.
 Package epstopdf Info: Source file: <Immagini/nokia.eps>
 (epstopdf)                    date: 2015-03-19 20:22:02
@@ -1931,278 +1929,293 @@ Package epstopdf Info: Source file: <Immagini/nokia.eps>
 (epstopdf)                    date: 2015-03-19 20:22:02
 (epstopdf)                    size: 21726 bytes
 (epstopdf)             Command: <repstopdf --outfile=Immagini/nokia-eps-converted-to.pdf Immagini/nokia.eps>
-(epstopdf)             \includegraphics on input line 255.
+(epstopdf)             \includegraphics on input line 239.
 Package epstopdf Info: Output file is already uptodate.
- <Immagini/nokia-eps-converted-to.pdf, id=102, 180.675pt x 301.125pt>
+ <Immagini/nokia-eps-converted-to.pdf, id=199, 180.675pt x 301.125pt>
 File: Immagini/nokia-eps-converted-to.pdf Graphic file (type pdf)
  <use Immagini/nokia-eps-converted-to.pdf>
-Package pdftex.def Info: Immagini/nokia-eps-converted-to.pdf used on input line 255.
+Package pdftex.def Info: Immagini/nokia-eps-converted-to.pdf used on input line 239.
 (pdftex.def)             Requested size: 180.67455pt x 301.12425pt.
- [3
+ [10
 
+ <./Immagini/PCM_numonyx-eps-converted-to.pdf> <./Immagini/nokia-eps-converted-to.pdf>] [11
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-] <Immagini/N-dominated.pdf, id=111, 580.08719pt x 578.16pt>
+] <Immagini/N-dominated.pdf, id=226, 580.08719pt x 578.16pt>
 File: Immagini/N-dominated.pdf Graphic file (type pdf)
  <use Immagini/N-dominated.pdf>
-Package pdftex.def Info: Immagini/N-dominated.pdf used on input line 312.
+Package pdftex.def Info: Immagini/N-dominated.pdf used on input line 303.
 (pdftex.def)             Requested size: 46.09393pt x 45.93614pt.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/it' tried instead on input line 312.
+(Font)              Font shape `T1/LinuxBiolinumT-TLF/b/it' tried instead on input line 303.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/it' will be
-(Font)              scaled to size 10.95pt on input line 312.
- <Immagini/G-dominated.pdf, id=112, 574.06468pt x 575.0283pt>
+(Font)              scaled to size 10.95pt on input line 303.
+ <Immagini/G-dominated.pdf, id=227, 574.06468pt x 575.0283pt>
 File: Immagini/G-dominated.pdf Graphic file (type pdf)
  <use Immagini/G-dominated.pdf>
-Package pdftex.def Info: Immagini/G-dominated.pdf used on input line 312.
+Package pdftex.def Info: Immagini/G-dominated.pdf used on input line 303.
 (pdftex.def)             Requested size: 46.09393pt x 46.1699pt.
+ [12
 
+ <./Immagini/N-dominated.pdf> <./Immagini/G-dominated.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./Immagini/G-dominated.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+File: Immagini/N-dominated.pdf Graphic file (type pdf)
+ <use Immagini/N-dominated.pdf>
+Package pdftex.def Info: Immagini/N-dominated.pdf used on input line 303.
+(pdftex.def)             Requested size: 46.09393pt x 45.93614pt.
+File: Immagini/G-dominated.pdf Graphic file (type pdf)
+ <use Immagini/G-dominated.pdf>
+Package pdftex.def Info: Immagini/G-dominated.pdf used on input line 303.
+(pdftex.def)             Requested size: 46.09393pt x 46.1699pt.
+ [13
+
+] [14
+
+]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\__mhchem_ce:n' on input line 316.
+(hyperref)                removing `\__mhchem_ce:n' on input line 311.
 
-LaTeX Font Info:    Try loading font information for TS1+LinuxBiolinumT-TLF on input line 347.
+LaTeX Font Info:    Try loading font information for TS1+LinuxBiolinumT-TLF on input line 344.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/libertine/TS1LinuxBiolinumT-TLF.fd
 File: TS1LinuxBiolinumT-TLF.fd 2012/11/26 (autoinst) Font definitions for TS1/LinuxBiolinumT-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 347.
- <Immagini/GeTe-cell.png, id=113, 676.5275pt x 528.97626pt>
+(Font)              scaled to size 10.95pt on input line 344.
+ <Immagini/GeTe-cell.png, id=273, 676.5275pt x 528.97626pt>
 File: Immagini/GeTe-cell.png Graphic file (type png)
  <use Immagini/GeTe-cell.png>
-Package pdftex.def Info: Immagini/GeTe-cell.png used on input line 347.
+Package pdftex.def Info: Immagini/GeTe-cell.png used on input line 344.
 (pdftex.def)             Requested size: 86.03946pt x 67.26802pt.
- <Immagini/GeTe-bilayer.png, id=115, 846.16125pt x 337.26pt>
+ <Immagini/GeTe-bilayer.png, id=275, 846.16125pt x 337.26pt>
 File: Immagini/GeTe-bilayer.png Graphic file (type png)
  <use Immagini/GeTe-bilayer.png>
-Package pdftex.def Info: Immagini/GeTe-bilayer.png used on input line 347.
+Package pdftex.def Info: Immagini/GeTe-bilayer.png used on input line 344.
 (pdftex.def)             Requested size: 122.91406pt x 48.98636pt.
+LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 14.4pt on input line 344.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineMonoT-TLF/m/n' will be
+(Font)              scaled to size 14.4pt on input line 344.
+LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/b/n' will be
+(Font)              scaled to size 14.4pt on input line 344.
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 7.0pt on input line 344.
+ [15
+
+ <./Immagini/GeTe-cell.png> <./Immagini/GeTe-bilayer.png>]
 File: Immagini/GeTe-cell.png Graphic file (type png)
  <use Immagini/GeTe-cell.png>
-Package pdftex.def Info: Immagini/GeTe-cell.png used on input line 347.
+Package pdftex.def Info: Immagini/GeTe-cell.png used on input line 344.
 (pdftex.def)             Requested size: 86.03946pt x 67.26802pt.
 File: Immagini/GeTe-bilayer.png Graphic file (type png)
  <use Immagini/GeTe-bilayer.png>
-Package pdftex.def Info: Immagini/GeTe-bilayer.png used on input line 347.
+Package pdftex.def Info: Immagini/GeTe-bilayer.png used on input line 344.
 (pdftex.def)             Requested size: 122.91406pt x 48.98636pt.
- [4
+ [16
 
-
-
-
-
-
-
-
-
-
-
-
-
- <./Immagini/GeTe-cell.png> <./Immagini/GeTe-bilayer.png>] <Immagini/nw_section_OK.png, id=130, 917.4275pt x 935.495pt>
+] <Immagini/nw_section_OK.png, id=299, 917.4275pt x 935.495pt>
 File: Immagini/nw_section_OK.png Graphic file (type png)
  <use Immagini/nw_section_OK.png>
-Package pdftex.def Info: Immagini/nw_section_OK.png used on input line 368.
+Package pdftex.def Info: Immagini/nw_section_OK.png used on input line 369.
 (pdftex.def)             Requested size: 84.56172pt x 86.21788pt.
- <Immagini/nw_long_OK_wDir.png, id=131, 752.8125pt x 635.37375pt>
+ <Immagini/nw_long_OK_wDir.png, id=300, 752.8125pt x 635.37375pt>
 File: Immagini/nw_long_OK_wDir.png Graphic file (type png)
  <use Immagini/nw_long_OK_wDir.png>
-Package pdftex.def Info: Immagini/nw_long_OK_wDir.png used on input line 368.
+Package pdftex.def Info: Immagini/nw_long_OK_wDir.png used on input line 369.
 (pdftex.def)             Requested size: 84.56172pt x 71.36496pt.
- (./NN-scheme.tex)
-LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/it' will be
-(Font)              scaled to size 14.4pt on input line 434.
- [5
+ [17
 
-
-
-
-
-
-
-
-
-] (./NN-scheme.tex) [6
-
+ <./Immagini/nw_section_OK.png> <./Immagini/nw_long_OK_wDir.png>]
+File: Immagini/nw_section_OK.png Graphic file (type png)
+ <use Immagini/nw_section_OK.png>
+Package pdftex.def Info: Immagini/nw_section_OK.png used on input line 369.
+(pdftex.def)             Requested size: 84.56172pt x 86.21788pt.
+File: Immagini/nw_long_OK_wDir.png Graphic file (type png)
+ <use Immagini/nw_long_OK_wDir.png>
+Package pdftex.def Info: Immagini/nw_long_OK_wDir.png used on input line 369.
+(pdftex.def)             Requested size: 84.56172pt x 71.36496pt.
+ [18
 
 ] (./NN-scheme.tex)
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/it' will be
+(Font)              scaled to size 14.4pt on input line 436.
+ [19
+
+] (./NN-scheme.tex) [20
+
+] (./NN-scheme.tex) [21
+
+] [22
+
+]
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 467.
 LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 465.
+(Font)              scaled to size 9.0pt on input line 467.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineMonoT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 465.
+(Font)              scaled to size 9.0pt on input line 467.
 LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 465.
- <Immagini/GT_grNN_DFT.pdf, id=159, 362.35374pt x 355.3275pt>
+(Font)              scaled to size 9.0pt on input line 467.
+ <Immagini/GT_grNN_DFT.pdf, id=374, 362.35374pt x 355.3275pt>
 File: Immagini/GT_grNN_DFT.pdf Graphic file (type pdf)
  <use Immagini/GT_grNN_DFT.pdf>
-Package pdftex.def Info: Immagini/GT_grNN_DFT.pdf used on input line 465.
+Package pdftex.def Info: Immagini/GT_grNN_DFT.pdf used on input line 467.
 (pdftex.def)             Requested size: 153.64493pt x 150.6679pt.
+ [23
 
-Overfull \hbox (22.0848pt too wide) detected at line 510
+ <./Immagini/GT_grNN_DFT.pdf>]
+Overfull \hbox (22.0848pt too wide) detected at line 515
 []
  []
 
-<Immagini/m1_long_OK.png, id=160, 354.32375pt x 907.39pt>
+<Immagini/m1_long_OK.png, id=388, 354.32375pt x 907.39pt>
 File: Immagini/m1_long_OK.png Graphic file (type png)
  <use Immagini/m1_long_OK.png>
-Package pdftex.def Info: Immagini/m1_long_OK.png used on input line 510.
+Package pdftex.def Info: Immagini/m1_long_OK.png used on input line 515.
 (pdftex.def)             Requested size: 53.14626pt x 136.10262pt.
- <Immagini/m1_AfterCry.png, id=161, 364.36125pt x 906.38625pt>
+ <Immagini/m1_AfterCry.png, id=389, 364.36125pt x 906.38625pt>
 File: Immagini/m1_AfterCry.png Graphic file (type png)
  <use Immagini/m1_AfterCry.png>
-Package pdftex.def Info: Immagini/m1_AfterCry.png used on input line 510.
+Package pdftex.def Info: Immagini/m1_AfterCry.png used on input line 515.
 (pdftex.def)             Requested size: 54.65182pt x 135.95207pt.
- <Immagini/bulk_Lcr_500_OK.pdf, id=162, 284.46274pt x 227.55013pt>
+ [24
+
+ <./Immagini/m1_long_OK.png (PNG copy)> <./Immagini/m1_AfterCry.png (PNG copy)>] <Immagini/bulk_Lcr_500_OK.pdf, id=399, 284.46274pt x 227.55013pt>
 File: Immagini/bulk_Lcr_500_OK.pdf Graphic file (type pdf)
  <use Immagini/bulk_Lcr_500_OK.pdf>
-Package pdftex.def Info: Immagini/bulk_Lcr_500_OK.pdf used on input line 510.
+Package pdftex.def Info: Immagini/bulk_Lcr_500_OK.pdf used on input line 515.
 (pdftex.def)             Requested size: 153.64493pt x 122.90648pt.
- <Immagini/bulk_Lcr_700_OK.pdf, id=163, 284.46274pt x 227.55013pt>
+ <Immagini/bulk_Lcr_700_OK.pdf, id=400, 284.46274pt x 227.55013pt>
 File: Immagini/bulk_Lcr_700_OK.pdf Graphic file (type pdf)
  <use Immagini/bulk_Lcr_700_OK.pdf>
-Package pdftex.def Info: Immagini/bulk_Lcr_700_OK.pdf used on input line 510.
+Package pdftex.def Info: Immagini/bulk_Lcr_700_OK.pdf used on input line 515.
 (pdftex.def)             Requested size: 153.64493pt x 122.90648pt.
- <Immagini/nw_superc.png, id=164, 792.9625pt x 744.7825pt>
-File: Immagini/nw_superc.png Graphic file (type png)
- <use Immagini/nw_superc.png>
-Package pdftex.def Info: Immagini/nw_superc.png used on input line 539.
-(pdftex.def)             Requested size: 122.91406pt x 115.4401pt.
-File: Immagini/nw_superc.png Graphic file (type png)
- <use Immagini/nw_superc.png>
-Package pdftex.def Info: Immagini/nw_superc.png used on input line 539.
-(pdftex.def)             Requested size: 122.91406pt x 115.4401pt.
-File: Immagini/nw_superc.png Graphic file (type png)
- <use Immagini/nw_superc.png>
-Package pdftex.def Info: Immagini/nw_superc.png used on input line 559.
-(pdftex.def)             Requested size: 153.64493pt x 144.3058pt.
- <Immagini/nw_Lcr_500_OK.pdf, id=165, 284.46274pt x 227.55013pt>
+ [25
+
+ <./Immagini/bulk_Lcr_500_OK.pdf> <./Immagini/bulk_Lcr_700_OK.pdf>] <Immagini/nw_superc_OK.png, id=453, 1083.04625pt x 892.33376pt>
+File: Immagini/nw_superc_OK.png Graphic file (type png)
+ <use Immagini/nw_superc_OK.png>
+Package pdftex.def Info: Immagini/nw_superc_OK.png used on input line 546.
+(pdftex.def)             Requested size: 122.91406pt x 101.26144pt.
+ [26
+
+ <./Immagini/nw_superc_OK.png (PNG copy)>]
+File: Immagini/nw_superc_OK.png Graphic file (type png)
+ <use Immagini/nw_superc_OK.png>
+Package pdftex.def Info: Immagini/nw_superc_OK.png used on input line 546.
+(pdftex.def)             Requested size: 122.91406pt x 101.26144pt.
+ [27
+
+]
+File: Immagini/nw_superc_OK.png Graphic file (type png)
+ <use Immagini/nw_superc_OK.png>
+Package pdftex.def Info: Immagini/nw_superc_OK.png used on input line 566.
+(pdftex.def)             Requested size: 153.64493pt x 126.587pt.
+ [28
+
+] <Immagini/nw_Lcr_500_OK.pdf, id=484, 284.46274pt x 227.55013pt>
 File: Immagini/nw_Lcr_500_OK.pdf Graphic file (type pdf)
  <use Immagini/nw_Lcr_500_OK.pdf>
-Package pdftex.def Info: Immagini/nw_Lcr_500_OK.pdf used on input line 586.
+Package pdftex.def Info: Immagini/nw_Lcr_500_OK.pdf used on input line 593.
 (pdftex.def)             Requested size: 153.64493pt x 122.90648pt.
- <Immagini/nw_Lcr_700_OK.pdf, id=166, 284.46274pt x 227.55013pt>
+ <Immagini/nw_Lcr_700_OK.pdf, id=485, 284.46274pt x 227.55013pt>
 File: Immagini/nw_Lcr_700_OK.pdf Graphic file (type pdf)
  <use Immagini/nw_Lcr_700_OK.pdf>
-Package pdftex.def Info: Immagini/nw_Lcr_700_OK.pdf used on input line 586.
+Package pdftex.def Info: Immagini/nw_Lcr_700_OK.pdf used on input line 593.
 (pdftex.def)             Requested size: 153.64493pt x 122.90648pt.
- <../Thesis/Immagini/Plots/D_vs_T.pdf, id=167, 284.46274pt x 227.55013pt>
-File: ../Thesis/Immagini/Plots/D_vs_T.pdf Graphic file (type pdf)
- <use ../Thesis/Immagini/Plots/D_vs_T.pdf>
-Package pdftex.def Info: ../Thesis/Immagini/Plots/D_vs_T.pdf used on input line 645.
+ [29
+
+ <./Immagini/nw_Lcr_500_OK.pdf> <./Immagini/nw_Lcr_700_OK.pdf>] [30
+
+] <Immagini/D_vs_T.pdf, id=538, 284.46274pt x 227.55013pt>
+File: Immagini/D_vs_T.pdf Graphic file (type pdf)
+ <use Immagini/D_vs_T.pdf>
+Package pdftex.def Info: Immagini/D_vs_T.pdf used on input line 652.
 (pdftex.def)             Requested size: 170.67896pt x 136.53111pt.
 
-Overfull \hbox (17.03403pt too wide) in paragraph at lines 645--645
+Overfull \hbox (17.03403pt too wide) in paragraph at lines 652--652
  [][] 
  []
 
 
-Overfull \vbox (5.53012pt too high) detected at line 645
+Overfull \vbox (5.53012pt too high) detected at line 652
  []
 
-<Immagini/u_vs_T_OnlyMine.pdf, id=168, 284.46274pt x 227.55013pt>
+[31
+
+ <./Immagini/D_vs_T.pdf>] [32
+
+] [33
+
+] [34
+
+] <Immagini/u_vs_T_OnlyMine.pdf, id=607, 284.46274pt x 227.55013pt>
 File: Immagini/u_vs_T_OnlyMine.pdf Graphic file (type pdf)
  <use Immagini/u_vs_T_OnlyMine.pdf>
-Package pdftex.def Info: Immagini/u_vs_T_OnlyMine.pdf used on input line 691.
+Package pdftex.def Info: Immagini/u_vs_T_OnlyMine.pdf used on input line 698.
 (pdftex.def)             Requested size: 199.12254pt x 159.284pt.
- [7
+ [35
 
+ <./Immagini/u_vs_T_OnlyMine.pdf>] [36
 
+] [37
 
+] [38
 
+] <Immagini/Q4_dist.png, id=653, 260.8947pt x 176.0979pt>
+File: Immagini/Q4_dist.png Graphic file (type png)
+ <use Immagini/Q4_dist.png>
+Package pdftex.def Info: Immagini/Q4_dist.png used on input line 755.
+(pdftex.def)             Requested size: 156.53801pt x 105.65955pt.
+ <Immagini/Cry_frac_700.pdf, id=654, 284.46274pt x 227.55013pt>
+File: Immagini/Cry_frac_700.pdf Graphic file (type pdf)
+ <use Immagini/Cry_frac_700.pdf>
+Package pdftex.def Info: Immagini/Cry_frac_700.pdf used on input line 755.
+(pdftex.def)             Requested size: 113.78307pt x 91.01843pt.
+ [39
 
+ <./Immagini/Q4_dist.png> <./Immagini/Cry_frac_700.pdf>] [40
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-]
-\global\@namedef{mainendframenumber}{21}
-<Immagini/u_vs_T_withSosso.pdf, id=178, 284.46274pt x 227.55013pt>
+] <Immagini/u_vs_T_withSosso.pdf, id=677, 284.46274pt x 227.55013pt>
 File: Immagini/u_vs_T_withSosso.pdf Graphic file (type pdf)
  <use Immagini/u_vs_T_withSosso.pdf>
-Package pdftex.def Info: Immagini/u_vs_T_withSosso.pdf used on input line 740.
+Package pdftex.def Info: Immagini/u_vs_T_withSosso.pdf used on input line 780.
 (pdftex.def)             Requested size: 199.12254pt x 159.284pt.
+ [41
 
-\global\@namedef{appendixtotalframenumber}{2}
-\global\@namedef{inserttotalframenumber}{21}
-\@writefile{nav}{\headcommand {\def \inserttotalframenumber {21}}}
-\@writefile{nav}{\headcommand {\def \appendixtotalframenumber {2}}}
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 746.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 746.
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 746.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 746.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 746.
+ <./Immagini/u_vs_T_withSosso.pdf>]
+\tf@nav=\write6
+\openout6 = `23Marzo2015.nav'.
+
+\tf@toc=\write7
+\openout7 = `23Marzo2015.toc'.
+
+\tf@snm=\write8
+\openout8 = `23Marzo2015.snm'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 786.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 786.
+ (./23Marzo2015.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 786.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 786.
+Package rerunfilecheck Info: File `23Marzo2015.out' has not changed.
+(rerunfilecheck)             Checksum: 665A64238D7FF84CD57D56577EEBBACB;286.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 786.
  ) 
 Here is how much of TeX's memory you used:
- 36015 strings out of 493109
- 764946 string characters out of 6135004
- 934747 words of memory out of 5000000
- 38666 multiletter control sequences out of 15000+600000
- 133648 words of font info for 150 fonts, out of 8000000 for 9000
+ 36165 strings out of 493109
+ 767416 string characters out of 6135004
+ 935000 words of memory out of 5000000
+ 38727 multiletter control sequences out of 15000+600000
+ 143325 words of font info for 167 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,25n,99p,10366b,1398s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Navigation37} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline1} has been referenced but does not exist, replaced by a fixed one
-
-{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/libertine/lbtn_afusau.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/libertine/lbtn_c6xmqr.enc}</usr/local/texlive/2014/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/libertine/LinBiolinumTI.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/euler/euex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb>
-Output written on 23Marzo2015.pdf (7 pages, 1862684 bytes).
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/libertine/lbtn_afusau.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/libertine/lbtn_c6xmqr.enc}</usr/local/texlive/2014/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/libertine/LinBiolinumTBO.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/libertine/LinBiolinumTI.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/euler/euex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
+Output written on 23Marzo2015.pdf (41 pages, 8367971 bytes).
 PDF statistics:
- 234 PDF objects out of 1000 (max. 8388607)
- 144 compressed objects within 2 object streams
- 22 named destinations out of 1000 (max. 500000)
- 329 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 767 PDF objects out of 1000 (max. 8388607)
+ 618 compressed objects within 7 object streams
+ 89 named destinations out of 1000 (max. 500000)
+ 339 words of extra memory for PDF output out of 10000 (max. 10000000)
 

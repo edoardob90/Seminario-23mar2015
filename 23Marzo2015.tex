@@ -34,18 +34,20 @@
   \usefonttheme{professionalfonts}
   \setbeamertemplate{navigation symbols}{}
   \setbeamertemplate{footline}[frame number]
-  \setbeameroption{show only notes}
 }
 
 
 \input{Preamble}
+
+%\setbeameroption{show notes on second screen}
+%\setbeameroption{show notes}
 
 %%% Layout di 4 pagine per foglio
 %\pgfpagesuselayout{4 on 1}[a4paper,border shrink=5mm,landscape]
 
 
 \title[] % (optional, use only with long paper titles)
-{Simulazioni atomistiche del processo di cristallizzazione in nanofili di \gete}
+{Simulazioni atomistiche del processo di cristallizzazione in nanofili per memorie a cambiamento di fase}
 
 %\subtitle
 %{Molecular dynamics simulations in microcanonical ensemble} % (optional)
@@ -90,6 +92,10 @@
 
 
 \section{Introduzione}
+
+
+
+%\subsection{Materiali e memorie a cambiamento di fase}
 
 \begin{frame}{Materiali a cambiamento di fase per memorie ottiche ed elettroniche}
 \begin{minipage}{1.0\textwidth}
@@ -155,14 +161,8 @@ La transizione è indotta per riscaldamento (impulsi laser/corrente)
 \end{table}
 \end{frame}
 \note{%
-The two states of these systems, that is crystal and amorphous, may be associated to
-zero and one bits. In fact these materials show a large difference in properties between
-the two phases, in particular, roughly speaking, the crystal is metallic and the amorphous 
-is insulating.\\
-A resistivity change of three orders of magnitude is exploited in PCMs and 
-a reflectivity change of about 30\% is used in DVD\---RAM.\\
-In these devices the phase transition is induced by heating using an electrical pulse in PCMs
-and a laser pulse in DVDs.
+I due stati del sistema, ossia cristallo e amorfo, possono essere associati ai due stati della memoria (bit zero e bit uno). Questo è possibile grazie al fatto che questi materiali mostrano una grande differenza nelle proprietà delle due fase; in particolare, possiamo dire che il cristallo ha un comportamento metallico, mentre l'amorfo è isolante.\\
+Una variazione di resistività di tre ordini di grandezza è alla base del funzionamento delle PCM, mentre un la variazione di riflettività (circa il 30\%) è sfruttata nelle memorie ottiche. In entrambi questi dispositivi, la transizione è indotta per riscaldamento, utilizzando impulsi di corrente nelle PCM e impulsi laser nei dispositivi ottici.
 }
 
 
@@ -180,32 +180,10 @@ and a laser pulse in DVDs.
  \end{column}
 \end{columns}
 \end{frame}
+\note{%
+Una cella PCM è formata da un film di materiale a cambiamento di fase, posto tra un contatto metallico e un resistore. La regione attiva della cella è soltanto una porzione di materiale e la transizione avviene per riscaldamento dovuto all'effetto Joule.
+}
 
-%\begin{minipage}[c]{0.58\linewidth}
-%\begin{flushright}
-%\end{flushright}
-%\end{minipage}
-%\vspace{-0.05\textheight}
-%\begin{minipage}[c]{0.38\linewidth}
-%\includegraphics[angle=0, width=0.9\textwidth]{PCMschem.eps}\\
-%\end{minipage}
-%\begin{minipage}[c]{0.48\linewidth}
-%\centering
-%\includegraphics[angle=0, width=0.9\textwidth]{PCM_SEM.eps}
-%\end{minipage}
-%\vspace{2ex}
-%\begin{minipage}[c]{0.48\linewidth}
-%\small{
-%\begin{itemize}
-%\item Active region: a small drop within GST film undergoes the phase transition\\
-%\item Phase-change by heating via Joule effect
-%\end{itemize}
-%\begin{center}
-%Concept first proposed by\\
-%Ovshinsky in 1968
-%\end{center}
-%}
-%\end{minipage}
 
 \begin{frame}{Caratteristica I--V di una cella PCM}
 \begin{columns}
@@ -229,31 +207,42 @@ and a laser pulse in DVDs.
   \end{column}
 \end{columns}
 \end{frame}
+\note{%
+La programmazione di una cella PCM è possibile grazie alla particolare caratteristica corrente--tensione del materiale attivo. L'immagine rappresenta una tipica curva corrente--tensione per un materiale a cambiamento di fase. Si noti come la fase cristallina ha un comportamento ohmico, mentre la fase amorfa manifesta un elevata resistività sino ad un valore di soglia, indicato con Vth. Al di sopra di questa soglia, il sistema passa in uno stato a minore resistività, che permette il riscaldamento e quindi la ricristallizzazione.\\
+La fase di lettura della cella è svolta a bassa tensione, inferiore al valore di soglia, mentre la programmazione della memoria è condotta a tensioni maggiori. In particolare, nella fase di RESET un impulso breve e di elevata intensità induce la fusione del cristallo e il successivo rapido raffreddamento conduce alla fase amorfa. Nella fase di SET, un impulso di maggiore durata induce invece la cristallizzazione della fase amorfa.
+}
+
 
 \begin{frame}
 \frametitle{PCM commerciali}
 {\ev Aprile 2010} 
 \hspace{10em}\raisebox{-1ex}{\includegraphics[angle=0, width=0.2\textwidth]{PCM_numonyx.eps}}\\
 \vspace{1ex}
-\textcolor{themecolor}{Numonyx} (ora acquisita da \textcolor{themecolor}{Micron}) ha commercializzato un dispositivo PCM di 90~nm\\
+\textcolor{themecolor}{Numonyx} (acquisita da \textcolor{themecolor}{Micron}) ha commercializzato un dispositivo PCM di 90~nm\\
 %Research center based in Agrate Brianza\\
 \vspace{3ex}
-{\ev Luglio 2012}\\
-\vspace{1ex}
-\textcolor{themecolor}{Numonyx}: dispositivo a 45~nm\\ %(Agrate)\\
+{\ev Aprile 2011}\\
 %\vspace{1ex}
 \begin{columns}[c]
-\column{0.00\textwidth}
-\column{0.70\textwidth}
-{\ev Gennaio 2013}\\
-\vspace{1ex}
-\textcolor{themecolor}{Nokia}: telefono cellulare ``Asha'' con\\
-dispositivo PCM Micron %(NOR replacement)\\
-\column{0.30\textwidth}
-\includegraphics[angle=0, width=0.4\textwidth]{nokia.eps}
+	\column{0.0\textwidth}
+	\column{0.7\textwidth}
+		\textcolor{themecolor}{Nokia}: telefono cellulare ``Asha'' con\\
+		dispositivo PCM Micron %(NOR replacement)\\
+%
+	\column{0.30\textwidth}
+		\includegraphics[angle=0, width=0.4\textwidth]{nokia.eps}
 \end{columns}
+%
+{\ev Dicembre 2012}\\
+\vspace{1ex}
+\textcolor{themecolor}{Micron}: primo dispositivo a 45~nm\\ %(Agrate)\\
 \end{frame}
+\note{%
+I dispositivi PCM sono già presenti sul mercato sin dal 2010 e nel 2011 è stato reso disponibile il primo telefono cellulare equipaggiato un con un dispositivo PCM prodotto da Micron.
+}
 
+
+%\subsection{I nanofili e la cristallizzazione}
 
 \begin{frame}{Nanofili nei dispositivi PCM}
  \begin{exampleblock}{Vantaggi nell'utilizzo di nanofili}
@@ -264,23 +253,26 @@ dispositivo PCM Micron %(NOR replacement)\\
   \end{itemize}
 \end{exampleblock}
 \note<1>{%
-  Sono state proposte diverse architetture per ridurre la potenza dissipata nel processo di programmazione. Una di queste consiste nel sostituire al film di materiale attivo, un nanofilo, che permette un miglior confinamento del calore e in principio consente anche una riduzione delle dimensioni della cella.
+  Nonostante dispositivi PCM siano già stati commercializzati, sono state proposte diverse architetture per migliorarne il funzionamento e per ridurre la potenza dissipata nel processo di programmazione. Una di queste consiste nel sostituire al film di materiale attivo un nanofilo, che permette un miglior confinamento del calore e in principio consente anche una riduzione delle dimensioni della cella.
 }
 \end{frame}
 
 
 \begin{frame}{La cristallizzazione}
-%\only<1>{%
+\only<1-2>{%
  \begin{exampleblock}{}
  La cristallizzazione determina la velocità di \emph{switching} nei dispositivi \\[3pt]
  \end{exampleblock}
-%}
+\vspace{0.5cm}
+\note<1>{%
+ Si è visto come il processo alla base del funzionamento di un dispositivo PCM sia la transizione tra la fase cristallina e quella amorfa. In particolare, il fenomeno della cristallizzazione la rapidità con cui è possibile cambiare lo stato di una cella di memoria.
+}
 %\only<2>{%
 % \begin{alertblock}{}
 % La cinetica di cristallizzazione è di difficile approccio sperimentale\\[3pt]
 % \end{alertblock}
 %}
-\only<1>{%
+\visible<2>{%
  \centering
  {\ev Teoria della nucleazione e crescita}\\[0.5cm]
  \begin{columns}
@@ -295,25 +287,30 @@ dispositivo PCM Micron %(NOR replacement)\\
    {\ev \emph{Growth--driven}}
   \end{column}
  \end{columns}
- %\begin{alertblock}{}
- % La cinetica di cristallizzazione è di difficile approccio sperimentale 
- %\end{alertblock}
+ }
 }
 %\vspace{.1cm}
-\only<2>{%
+\only<3>{%
+ \begin{alertblock}{Perché è interessante?}
   \begin{itemize}
-   \item Il meccanismo di cristallizzazione dipende dalla dimensione della fase amorfa, dalla temperatura e dal materiale
+   \item Il meccanismo di cristallizzazione dipende dalla  dimensione della fase amorfa, dalla temperatura e dal materiale
    \item Nelle PCM la fase amorfa è portata a $T$ molto maggiori di $T\ped{glass}$ (liquido sotto--raffreddato)
    \item La cinetica di cristallizzazione può cambiare da \emph{bulk} a nanofili \\[3pt]
-      $T\ped{melt}$ e $T\ped{glass}$ dipendono dalle dimensioni
+      $\Rightarrow\,T\ped{melt}\; \text{e}\; T\ped{glass}$ {\bf dipendono} dalle dimensioni
   \end{itemize}
-
-}
+ \end{alertblock}
+ }
 \end{frame}
 
 
 
+
+
+
+
 \section{Nanofili di \gete}
+
+%\subsection{\gete}
 
 \begin{frame}{\gete: struttura cristallina}
  \begin{columns}
@@ -346,6 +343,8 @@ dispositivo PCM Micron %(NOR replacement)\\
 
 \end{frame}
 
+%\subsection{Nanofili}
+
 \begin{frame}{Nanofilo: il modello}
  \begin{columns}
   \begin{column}{0.5\textwidth}
@@ -364,7 +363,9 @@ dispositivo PCM Micron %(NOR replacement)\\
  \end{columns}
  \vspace{0.2cm}
  \centering
+\onslide<2->{%
  Simulazioni di {\ev dinamica molecolare} del processo di cristallizzazione% con potenziale interatomico
+ }
 \end{frame}
 
 
@@ -372,6 +373,7 @@ dispositivo PCM Micron %(NOR replacement)\\
 
 
 \section{Metodi computazionali}
+
 %\subsection{Potenziale \emph{neural networks}}
 %\begin{frame}{Dinamica molecolare con potenziale \emph{neural networks}}
 % MD e potenziale NN
@@ -420,7 +422,7 @@ configurations.
 %
 \begin{column}{0.50\textwidth}
 \centering
-{\ev{Symmetry function $\{G\}$}}\\
+{\ev{Symmetry functions $\{G\}$}}\\
 Informazioni sull'intorno atomico entro un certo raggio di \emph{cutoff} (terza \emph{shell} di coordinazione)\\[12pt]}
 \onslide<3->{%
   $E_i$ è funzione analitica delle posizioni degli atomi
@@ -467,9 +469,12 @@ Informazioni sull'intorno atomico entro un certo raggio di \emph{cutoff} (terza 
 
 
 
+
 \section{Risultati}
 
-\begin{frame}{Cristallizzazione in \emph{bulk}}
+%\subsection{\gete \emph{bulk}}
+
+\begin{frame}{Cristallizzazione in \gete \emph{bulk}}
 \only<1>{%
 \centering
 Interfaccia tra cristallo e liquido sotto--raffreddato
@@ -509,12 +514,14 @@ Interfaccia tra cristallo e liquido sotto--raffreddato
 }
 \end{frame}
 
+
+
 \begin{frame}{Temperatura di fusione}
 \centering
 Stima della temperatura di fusione nei nanofili\\[12pt]
 \begin{columns}
 \begin{column}{0.4\textwidth}
-\includegraphics[width=\textwidth]{nw_superc}
+\includegraphics[width=\textwidth]{nw_superc_OK}
 \end{column}
 %
 \begin{column}{0.6\textwidth}
@@ -553,7 +560,7 @@ Stima della temperatura di fusione nei nanofili\\[12pt]
 
   \end{column}
   \begin{column}{0.5\textwidth}
-   \includegraphics[width=\textwidth]{nw_superc}
+   \includegraphics[width=\textwidth]{nw_superc_OK}
   \end{column}
  \end{columns}
 \end{frame}
@@ -595,11 +602,11 @@ Stima della temperatura di fusione nei nanofili\\[12pt]
     u(T)= \frac{6D}{\lambda} \left[ 1- e^{ \left( -\Delta\mu/k_B T\right) } \right]
   \end{equation*}
   \begin{center}
-  \begin{itemize}
-   \item $D$ = coefficiente di auto--diffusione
-   \item $\lambda$ = distanza interatomica media ($\sim \SI{3}{\angstrom}$)
-   \item $\Delta\mu$ = differenza di potenziale chimico tra cristallo e liquido
-  \end{itemize}  
+  \begin{description}
+   \item [$D$] coefficiente di auto--diffusione
+   \item [$\lambda$] distanza interatomica media ($\sim \SI{3}{\angstrom}$)
+   \item [$\Delta\mu$] differenza di potenziale chimico tra cristallo e liquido
+  \end{description}  
   \end{center}
 \end{frame}
 
@@ -649,10 +656,10 @@ Stima della temperatura di fusione nei nanofili\\[12pt]
  Differenza di potenziale chimico $\Delta\mu$ tra cristallo e liquido\\[3pt]
  Formula di {\ev Thompson--Spaepen}
  \[ \Delta\mu = T_m\Delta S_m \frac{(T_m-T)\,2T}{(T_m+T)\,T_m} \]
- \begin{itemize}
- \item $T_m\Delta S_m$ è il calore latente di fusione
- \item $\Delta S_m (\text{bulk})=\textcolor{themecolor}{\num{0.186}\,\si{meV/\text{atomo}}}$ da simulazioni NN--MD
- \end{itemize}
+ \begin{description}
+ 	\item [$T_m\Delta S_m$] calore latente di fusione
+ 	\item [$\Delta S_m$ (bulk)] calcolato da simulazioni NN--MD\\ pari \textcolor{themecolor}{\SI{0.186}{meV/\text{atomo}}}
+ \end{description}
  
 \end{frame}
 
@@ -671,7 +678,7 @@ Stima della temperatura di fusione nei nanofili\\[12pt]
  \begin{columns}[b]
   \begin{column}{0.5\textwidth}
    \begin{displaymath}
-      \frac{u\ped{N}}{u\ped{B}}(\num{700}\,K) \approx \textcolor{themecolor}{\num{1.61}}
+      \frac{u\ped{B}}{u\ped{N}}(\num{700}\,K) \approx \textcolor{themecolor}{\num{1.61}}
    \end{displaymath}
   \end{column}
   \begin{column}{0.5\textwidth}
@@ -694,7 +701,7 @@ Stima della temperatura di fusione nei nanofili\\[12pt]
 \section{Conclusioni}
 
 \begin{frame}{Conclusioni}
- \begin{itemize}[<+->]
+ \begin{itemize}
  	\item Cinetica di cristallizzazione in nanofili di \gete
  	\item Riduzione di $T_m$ da $\SI{1001}{K}$ a $\approx\SI{830}{K}$
  	\item Riduzione della velocità di cristallizzazione al più di un fattore 2, ben descritta dall'espressione classica (CNT) per la velocità di crescita
@@ -702,7 +709,7 @@ Stima della temperatura di fusione nei nanofili\\[12pt]
  \end{itemize}
 \centering
 \vspace{0.5cm}
-\onslide<4->{Progetto Europeo {\ev FP7:Synapse}}
+\onslide<2->{Progetto Europeo {\ev FP7--Synapse}}
 
 	
 \end{frame}
@@ -716,6 +723,7 @@ Possiamo perciò concludere che i risultati osservati suggeriscono che nanofili 
 \appendix
 
 \begin{frame}{Parametro d'ordine}
+\only<1>{%
  \begin{equation*}
   \begin{split}
    \bar{Q}_4(i) &= \frac{1}{N_b(i)}\sum_{j=1}^{N_b(i)}%
@@ -724,15 +732,47 @@ Possiamo perciò concludere che i risultati osservati suggeriscono che nanofili 
   	q_{4m}(i) &= \frac{1}{N_b (i)} \sum_{j=1}^{N_b(i)} Y_{4m}(\bm{r}_{ij})
   \end{split}
  \end{equation*}
+}
+\only<2>{%
+ \begin{alertblock}{Criterio su $\bar{Q}_4$}
+	Un atomo appartiene alla fase cristallina se $\bar{Q}_4 > 0.9$
+ \end{alertblock}
+	\vspace{0.5cm}
+\begin{columns}
+	\begin{column}{0.6\textwidth}
+	%\begin{center}
+		\centering
+		\includegraphics[scale=0.6]{Q4_dist}
+	%\end{center}
+	\end{column}
+	\begin{column}{0.4\textwidth}
+		\centering
+		\includegraphics[scale=0.4]{Cry_frac_700}
+	\end{column}
+\end{columns}
+}
 
 \end{frame}
+
+\begin{frame}{Velocità di crescita}{Calcolo di L\ped{cris}}
+ La velocità di crescita è estratta da $\frac{dL\ped{cris}}{dt}$ nella regione lineare.
+ \begin{equation*}
+ 	L\ped{cris}= N\ped{cris} \frac{d\ped{hkl}}{2 N\ped{surf}}	
+ \end{equation*}
+ \begin{itemize}
+ 	\item $N\ped{cris}$ = numero di atomi cristallini appartenenti allo \emph{slab} al tempo $t$
+ 	\item $d\ped{hkl}$ = distanza interplanare dei piani cristallini dello \emph{slab}
+ 	\item $N\ped{surf}$ = numero di atomi nella superficie cristallina ideale
+ \end{itemize}	
+\end{frame}
+
 
 
 %\begin{frame}{Coefficiente di auto--diffusione}{Calcolo}
 % MSD e fit lineare.
 %\end{frame}
 
-\begin{frame}{Cristallizzazione}{Confronto tra bulk e nanofilo}
+\begin{frame}{Cristallizzazione}{Confronto tra nanofilo e bulk}
 \begin{center}
  \includegraphics[scale=0.7]{u_vs_T_withSosso}\\[0.2cm]
  {\cit{[Sosso et al., J. Phys. Chem. Lett. 4, 4241 (2013)]}}
