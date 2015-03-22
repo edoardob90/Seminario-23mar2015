@@ -2,7 +2,7 @@
 \select@language {italian}
 \select@language {italian}
 \beamer@sectionintoc {1}{Introduzione}{2}{0}{1}
-\beamer@sectionintoc {2}{Nanofili di \ce {GeTe}\xspace }{23}{0}{2}
-\beamer@sectionintoc {3}{Metodi computazionali}{27}{0}{3}
-\beamer@sectionintoc {4}{Risultati}{34}{0}{4}
-\beamer@sectionintoc {5}{Conclusioni}{46}{0}{5}
+\beamer@sectionintoc {2}{Nanofili di \ce {GeTe}\xspace }{15}{0}{2}
+\beamer@sectionintoc {3}{Metodi computazionali}{17}{0}{3}
+\beamer@sectionintoc {4}{Risultati}{22}{0}{4}
+\beamer@sectionintoc {5}{Conclusioni}{34}{0}{5}

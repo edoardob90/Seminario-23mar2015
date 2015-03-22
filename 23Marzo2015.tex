@@ -40,7 +40,7 @@
 \input{Preamble}
 
 %\setbeameroption{show notes on second screen}
-\setbeameroption{show notes}
+\setbeameroption{show only notes}
 
 %%% Layout di 4 pagine per foglio
 %\pgfpagesuselayout{4 on 1}[a4paper,border shrink=5mm,landscape]
@@ -383,7 +383,7 @@ I dispositivi PCM sono già presenti sul mercato sin dal 2010 e nel 2011 è stat
 \end{frame}
 \note{%
  Il sistema considerato in questo lavoro è un nanofilo di \gete cresciuto lungo la direzione cristallografica [110], osservata in alcuni studi sperimentali, e con un diametro pari a circa 8 nm. La cella di simulazione ha una lunghezza di 84.65 angstrom e contiene 16 540 atomi.\\
- Il processo di cristallizzazione è stato studiato con simulazioni di dinamica molecolare. Poiché un numero di atomi così elevato rende inaccessibile un approccio 
+ Il processo di cristallizzazione è stato studiato con simulazioni di dinamica molecolare. Poiché un numero di atomi così elevato rende inaccessibile un approccio ``ab initio'', è stato necessario disporre di un potenziale interatomico adeguato. Per il sistema \gete è stato costruito un potenziale sfruttando un metodo basato sulle reti neurali.
 }
 
 
@@ -399,18 +399,13 @@ I dispositivi PCM sono già presenti sul mercato sin dal 2010 e nel 2011 è stat
 
 %\subsection{Potenziale NN}
 
-\begin{frame}{Potenziale \emph{neural networks}}
+\begin{frame}{Potenziale \emph{neural network}}
  \centering
 Energia totale come somma di energie atomiche: $E_{tot} = \sum_i E_i$
 \note<1>{%
-The neural network potential is built by writing the total energy as 
-a sum of the atomic energies which depend on the atomic local environment. 
-And the local environment is described by the symmetry functions $G$ 
-which depend on bond lengths and bond angles up to a certain cut-off distance 
-that in our case include the third coordination shell.\\
-The neural network is a scheme to assign an energy to a single atom given the 
-local environment. The atomic energy is an analytic function of the atomic 
-positions, so it is easy to calculate forces. 
+Il potenziale neural network è costruito esprimendo l'energia totale del sistema come somma di energie atomiche, le quali dipendono direttamente dall'intorno locale di ogni atomo.
+L'intorno locale è descritto da un insieme di opportune funzioni, chiamate ``symmetry functions'' (indicate con $G$), che dipendono dalle lunghezze e dagli angoli di legame fino ad una distanza di cutoff. Nel nostro caso, questa distanza comprende la terza shell di coordinazione.
+La rete neurale è utilizzata per assegnare l'energia di un singolo atomo una volta noto il suo intorno locale.
 }
 \begin{flushright}
 {\cit{[J.~Behler e M.~Parrinello, PRL 98, 146401 (2007)]}}
@@ -428,14 +423,8 @@ positions, so it is easy to calculate forces.
       \resizebox*{0.8\textwidth}{!}{\input{NN-scheme}}
     \end{column}
 \note<2>{%
-This picture represent a simple scheme of a neural network.
-The symmetry functions are obtained from the atomic positions and are the input 
-values of the network. We take a linear combination of the symmetry functions with 
-these weights $a$ to obtain these intermediate values $y$. Then we apply a non linear 
-function $f$ with this form to the $y$s and the results are again linearly combined to 
-obtain the atomic energy. The weights $a$ are the fitting parameters of the potential. 
-In our case for GeTe the network has 8 thousand parameters fitted on 30 thousand 
-configurations.  
+La figura rappresenta un semplice schema di una rete neurale. Le symmetry functions sono costruite a partire dalle posizioni di tutti gli atomi e costituiscono i valori iniziali della rete. In seguito, si costruiscono combinazioni lineari delle $G$, i cui coefficienti sono i termini $a$, per ottenere i valori intermedi $y$. Infine, a questi valori si applica una funzione non lineare $f$ e i risultati sono nuovamente combinati linearmente per ottenere l'energia atomica $E_i$. La flessibilità di questo schema nella descrizione del potenziale è legata ai coefficienti $a$, che costituiscono i parametri della procedura di interpolazione del potenziale.
+Una caratteristica importante di questo metodo è che permette di ottenere l'energie $E_i$ (e quindi l'energia totale) come funzione analitica delle coordinate atomiche, permettendo di calcolare facilmente le forze agenti sugli atomi.
 }
 %
 \begin{column}{0.50\textwidth}
@@ -455,13 +444,16 @@ Informazioni sull'intorno atomico entro un certo raggio di \emph{cutoff} (terza 
 
 
 %\subsection{Potenziale NN per il \gete}
-\begin{frame}{Potenziale \emph{neural networks} per il \gete}
+\begin{frame}{Potenziale \emph{neural network} per il \gete}
 \only<1>{%
   \begin{itemize}
     \item $E_i$ è calcolata con il metodo \emph{neural networks}
     \item Il potenziale per il \gete è ottenuto interpolando un database di energie calcolate \emph{ab initio}
     \item \num{30000} configurazioni e $\sim\num{8000}$ parametri
   \end{itemize}
+}
+\note<1>{%
+Sono state condotte opportune verifiche di questo potenziale ed è si è concluso che esso descrive accuratamente le proprietà della fase liquida e di quella amorfa, come mostrato dalla figura. Inoltre, anche grandezze come il coefficiente di auto--diffusione del liquido a 300 K e la temperatura di fusione sono ben riprodotte dal potenziale utilizzato.
 }
 %
 \only<2>{%
@@ -482,7 +474,11 @@ Informazioni sull'intorno atomico entro un certo raggio di \emph{cutoff} (terza 
   \end{column}
  \end{columns}
  }
+ \note<2>{%
+Sono state condotte opportune verifiche di questo potenziale ed è si è concluso che esso descrive accuratamente le proprietà della fase liquida e di quella amorfa, come mostrato dalla figura. Inoltre, anche grandezze come il coefficiente di auto--diffusione del liquido a 300 K e la temperatura di fusione sono ben riprodotte dal potenziale utilizzato.
+}
 \end{frame}
+
 
 
 
@@ -516,6 +512,12 @@ Interfaccia tra cristallo e liquido sotto--raffreddato
   \end{column}
  \end{columns}
 }
+\note<1>{%
+ In primo luogo, è stato studiato il processo di cristallizzazione considerando il \gete bulk. A questo scopo è stato utilizzato un modello (rappresentato in figura) in cui una porzione di \gete cristallino è posta all'interfaccia con la fase liquida sotto--raffreddata.
+ In seguito, sono state svolte delle simulazioni a temperatura costante per intervalli di tempo dell'ordine delle centinaia di picosecondi.\\
+ Durante ogni simulazione, il numero di atomi cristallini è stato calcolato secondo un parametro d'ordine ed si è monitorata l'evoluzione temporale dello spessore della sezione cristallina, indicata con L\ped{cris}.
+}
+%
 \only<2>{%
   \begin{columns}
    \begin{column}{0.5\textwidth}
@@ -529,6 +531,9 @@ Interfaccia tra cristallo e liquido sotto--raffreddato
  \centering
  Velocità di crescita
  \[ u = \frac{dL\ped{cris}}{dt} \]
+}
+\note<2>{%
+ La velocità di cristallizzazione si ottiene calcolando la derivata temporale dello spessore nella regione in cui l'andamento è lineare. I valori ottenuti per il bulk alle temperature di 500 e 700 K sono riportati sui rispettivi grafici.
 }
 \end{frame}
 
