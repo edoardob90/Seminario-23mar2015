@@ -213,8 +213,8 @@ Una cella PCM è formata da un film di materiale a cambiamento di fase, posto tr
 \end{columns}
 \end{frame}
 \note{%
-La programmazione di una cella PCM è possibile grazie alla particolare caratteristica corrente--tensione del materiale attivo. L'immagine rappresenta una tipica curva corrente--tensione per un materiale a cambiamento di fase. Si noti come la fase cristallina ha un comportamento ohmico, mentre la fase amorfa manifesta un elevata resistività sino ad un valore di soglia, indicato con Vth. Al di sopra di questa soglia, il sistema passa in uno stato a minore resistività, che permette il riscaldamento e quindi la ricristallizzazione.\\
-La fase di lettura della cella è svolta a bassa tensione, inferiore al valore di soglia, mentre la programmazione della memoria è condotta a tensioni maggiori. In particolare, nella fase di RESET un impulso breve e di elevata intensità induce la fusione del cristallo e il successivo rapido raffreddamento conduce alla fase amorfa. Nella fase di SET, un impulso di maggiore durata induce invece la cristallizzazione della fase amorfa.
+La programmazione di una cella PCM è possibile grazie alla particolare caratteristica corrente--tensione del materiale attivo. L'immagine rappresenta una tipica curva corrente--tensione per un materiale a cambiamento di fase. Si noti come la fase cristallina ha un comportamento ohmico, mentre la fase amorfa manifesta un elevata resistività sino ad un valore di soglia, indicato con V\ped{th}. Al di sopra di questa soglia, il sistema passa in uno stato a minore resistività, che permette il riscaldamento e quindi la ricristallizzazione.\\
+La fase di lettura dell'informazione consiste nella misura a bassa tensione (inferiore al valore di soglia) della resistenza del film, mentre la programmazione della memoria è condotta a tensioni maggiori. In particolare, nella fase di RESET un impulso breve e di elevata intensità induce la fusione del cristallo e il successivo rapido raffreddamento conduce alla fase amorfa. Nella fase di SET, un impulso di maggiore durata induce invece la cristallizzazione della fase amorfa.
 }
 
 
@@ -243,7 +243,7 @@ La fase di lettura della cella è svolta a bassa tensione, inferiore al valore d
 \textcolor{themecolor}{Micron}: primo dispositivo a 45~nm\\ %(Agrate)\\
 \end{frame}
 \note{%
-I dispositivi PCM sono già presenti sul mercato sin dal 2010 e nel 2011 è stato reso disponibile il primo telefono cellulare equipaggiato con un dispositivo PCM prodotto da Micron.
+I dispositivi PCM sono stati introdotti sul mercato nel 2010 e nel 2011 è stato reso disponibile il primo telefono cellulare equipaggiato con un dispositivo PCM prodotto da Micron.
 }
 
 
@@ -258,7 +258,7 @@ I dispositivi PCM sono già presenti sul mercato sin dal 2010 e nel 2011 è stat
   \end{itemize}
 \end{exampleblock}
 \note<1>{%
-  Nonostante dispositivi PCM siano già stati commercializzati, sono state proposte diverse architetture per migliorarne il funzionamento e per ridurre la potenza dissipata nel processo di programmazione. Una di queste consiste nel sostituire al film di materiale attivo un nanofilo, che permette un miglior confinamento del calore e in principio consente anche una riduzione delle dimensioni della cella.
+  Nonostante dispositivi PCM siano già stati commercializzati, sono state proposte diverse architetture per migliorare le caratteristiche di futuri dispositivi. Una di queste consiste nel sostituire al film di materiale attivo un nanofilo. Questa strategia ha sostanzialmente due vantaggi: la riduzione della dimensione di materiale attivo riduce la potenza richiesta per la programmazione e contemporaneamente aumenta la densità di informazioni che possono essere memorizzate nella cella.
 }
 \end{frame}
 
@@ -291,7 +291,7 @@ I dispositivi PCM sono già presenti sul mercato sin dal 2010 e nel 2011 è stat
  \end{columns}
  }
 }
-\note<2>{%
+\note<1-2>{%
  (PRIMA) Si è visto come il processo alla base del funzionamento di un dispositivo PCM sia la transizione tra la fase cristallina e quella amorfa. In particolare, il fenomeno della cristallizzazione determina la rapidità con cui è possibile cambiare lo stato di una cella di memoria.\\
  (SECONDA) Nel processo di cristallizzazione possono essere distinte due fasi: la nucleazione, ossia la formazione di un germe cristallino all'interno di una matrice disordinata, e la crescita, ossia la progressione del fronte che separa la fase cristallina da quella amorfa. Durante una cristallizzazione questi due fenomeni possono manifestare andamenti in funzione della temperatura molto diversi; è infatti possibile che uno dei due meccanismi sia dominante sull'altro, e si può distinguere un processo di cristallizzazione controllato dalla nucleazione oppure dalla crescita.
 }
@@ -307,8 +307,8 @@ I dispositivi PCM sono già presenti sul mercato sin dal 2010 e nel 2011 è stat
  \end{alertblock}
  }
  \note<3>{%
- (TERZA) Perciò, è interessante studiare come la cristallizzazione dipenda dalle dimensioni della fase disordinata, dalla temperatura del sistema e dal materiale. Inoltre, nei dispositivi, durante il processo di SET la fase amorfa è portata a temperature molto maggiori della temperatura di transizione vetrosa e la cristallizzazione ha luogo in quella che è chiamata ``fase liquida sotto--raffreddata''. Infine, è interessante comprendere se la cinetica di cristallizzazione subisce effetti dovuti alla dimensionalità del sistema, passando dal materiale in bulk a quello nanostrutturato.
- In questo lavoro, abbiamo studiato la cristallizzazione in nanofili costituiti dal materiale a cambiamento di fase \gete.
+ (TERZA) Possiamo indicare 3 ragioni per cui è interessante studiare il fenomeno di cristallizzazione: primo, studiare come esso dipenda dalle dimensioni della fase amorfa, dalla temperatura del sistema e dal materiale. Secondo: nei dispositivi, durante il processo di SET, la fase amorfa è portata a temperature molto maggiori della temperatura di transizione vetrosa e la cristallizzazione ha luogo in quella che è chiamata ``fase liquida sotto--raffreddata''. Terzo: comprendere se la cinetica di cristallizzazione subisce effetti dovuti alla dimensionalità del sistema, passando dal materiale in bulk a quello nanostrutturato.\\
+ Tra i materiali più studiati nel campo delle memorie a cambiamento di fase, si trova il sistema binario \gete, a cui ci siamo rivolti in questo lavoro.
 }
 
 \end{frame}
@@ -351,8 +351,9 @@ I dispositivi PCM sono già presenti sul mercato sin dal 2010 e nel 2011 è stat
 
 \end{frame}
 \note{%
- La struttura cristallina del \gete, stabile a temperatura ambiente, è un reticolo cristallino trigonale, con una cella elementare romboedrica, mostrata in figura. Questa struttura può essere vista come la cella primitiva del reticolo cubico a facce centrate allungata lungo la direzione <111>.\\
- I parametri strutturali della struttura trigonale sono il passo reticolare $a$, l'angolo tra una coppia di vettori di base $\alpha$ e il parametro interno $x$ che assegna le posizioni nella cella elementare dei due atomi di Ge e Te.
+ La struttura cristallina del \gete, stabile a temperatura ambiente, è un reticolo cristallino trigonale, con una cella elementare romboedrica, mostrata in figura. Questa struttura può essere vista come la cella primitiva del reticolo cubico tipo NaCl allungata lungo la direzione <111>, come rappresentato nella figura in basso.\\
+ Sono anche riportati i parametri strutturali della cella cristallina romboedrica.
+ %I parametri strutturali della struttura trigonale sono il passo reticolare $a$, l'angolo tra una coppia di vettori di base $\alpha$ e il parametro interno $x$ che assegna le posizioni nella cella elementare dei due atomi di Ge e Te.
 }
 
 
@@ -382,8 +383,11 @@ I dispositivi PCM sono già presenti sul mercato sin dal 2010 e nel 2011 è stat
 %}
 \end{frame}
 \note{%
- Il sistema considerato in questo lavoro è un nanofilo di \gete cresciuto lungo la direzione cristallografica [110], osservata in alcuni studi sperimentali, e con un diametro pari a circa 8 nm. La cella di simulazione ha una lunghezza di 84.65 angstrom e contiene 16 540 atomi.\\
- Il processo di cristallizzazione è stato studiato con simulazioni di dinamica molecolare. Poiché un numero di atomi così elevato rende inaccessibile un approccio ``ab initio'', è stato necessario disporre di un potenziale interatomico adeguato. Per il sistema \gete è stato costruito un potenziale sfruttando un metodo basato sulle reti neurali.
+ Il processo di cristallizzazione è stato studiato per mezzo di simulazioni di dinamica molecolare, considerando come modello un nanofilo di \gete nella fase alfa cresciuto lungo la direzione [110], che studi sperimentali hanno osservato come una delle direzioni di crescita preferenziali.
+ La cella di simulazione ha una lunghezza di 85 angstrom (pronuncia ``ongstrom'') e circa 16 000 atomi.\\
+ Un numero di atomi così elevato rende inaccessibile un approccio ab initio ed è stato necessario disporre di un potenziale interatomico adeguato. Per il sistema \gete, è stato costruito un potenziale interatomico utilizzando un metodo basato sulle reti neurali.
+ %Il sistema considerato in questo lavoro è un nanofilo di \gete cresciuto lungo la direzione cristallografica [110], osservata in alcuni studi sperimentali, e con un diametro pari a circa 8 nm. La cella di simulazione ha una lunghezza di 84.65 angstrom e contiene 16 540 atomi.\\
+ %Il processo di cristallizzazione è stato studiato con simulazioni di dinamica molecolare. Poiché un numero di atomi così elevato rende inaccessibile un approccio ``ab initio'', è stato necessario disporre di un potenziale interatomico adeguato. Per il sistema \gete è stato costruito un potenziale sfruttando un metodo basato sulle reti neurali.
 }
 
 
@@ -403,9 +407,9 @@ I dispositivi PCM sono già presenti sul mercato sin dal 2010 e nel 2011 è stat
  \centering
 Energia totale come somma di energie atomiche: $E_{tot} = \sum_i E_i$
 \note<1>{%
-Il potenziale neural network è costruito esprimendo l'energia totale del sistema come somma di energie atomiche, le quali dipendono direttamente dall'intorno locale di ogni atomo.
-L'intorno locale è descritto da un insieme di opportune funzioni, chiamate ``symmetry functions'' (indicate con $G$), che dipendono dalle lunghezze e dagli angoli di legame fino ad una distanza di cutoff. Nel nostro caso, questa distanza comprende la terza shell di coordinazione.
-La rete neurale è utilizzata per assegnare l'energia di un singolo atomo una volta noto il suo intorno locale.
+Il potenziale basato sulle reti neurali (brevemente, neural network) è costruito esprimendo l'energia totale del sistema come somma di energie atomiche, che dipendono direttamente dall'intorno locale di ogni atomo.
+L'intorno locale è descritto da un insieme di opportune funzioni, chiamate ``symmetry functions'' (indicate con $G$): esse dipendono dalle lunghezze e dagli angoli di legame fino ad una certa distanza di cutoff. Nel nostro caso, questa distanza comprende la terza shell di coordinazione.
+La funzione della rete neurale è quella di assegnare l'energia di un singolo atomo una volta noto il suo intorno locale.
 }
 \begin{flushright}
 {\cit{[J.~Behler e M.~Parrinello, PRL 98, 146401 (2007)]}}
@@ -423,8 +427,11 @@ La rete neurale è utilizzata per assegnare l'energia di un singolo atomo una vo
       \resizebox*{0.8\textwidth}{!}{\input{NN-scheme}}
     \end{column}
 \note<2>{%
-La figura rappresenta un semplice schema di una rete neurale. Le symmetry functions sono costruite a partire dalle posizioni di tutti gli atomi e costituiscono i valori iniziali della rete. In seguito, si costruiscono combinazioni lineari delle $G$, i cui coefficienti sono i termini $a$, per ottenere i valori intermedi $y$. Infine, a questi valori si applica una funzione non lineare $f$ e i risultati sono nuovamente combinati linearmente per ottenere l'energia atomica $E_i$. La flessibilità di questo schema nella descrizione del potenziale è legata ai coefficienti $a$, che costituiscono i parametri della procedura di interpolazione del potenziale.
-Una caratteristica importante di questo metodo è che permette di ottenere l'energie $E_i$ (e quindi l'energia totale) come funzione analitica delle coordinate atomiche, permettendo di calcolare facilmente le forze agenti sugli atomi.
+In figura è rappresentato un semplice schema di una rete neurale.
+Il primo passo per ottenere l'energia atomica è definire le funzioni $G$ a partire dalle posizioni di tutti gli atomi. In seguito, vengono costruite delle combinazioni lineari dei valori delle $G$ che costituiscono i valori intermedi, indicati con $y$. Il terzo passaggio comporta applicare una particolare funzione non lineare a questi valori, che sono combinati a loro volta per ottenere il valore finale dell'energia atomica.
+%Le symmetry functions sono costruite a partire dalle posizioni di tutti gli atomi e costituiscono i valori iniziali della rete. In seguito, si costruiscono combinazioni lineari delle $G$, i cui coefficienti sono i termini $a$, per ottenere i valori intermedi $y$. Infine, a questi valori si applica una funzione non lineare $f$ e i risultati sono nuovamente combinati linearmente per ottenere l'energia atomica $E_i$
+La flessibilità di questo schema nella descrizione di un potenziale è legata ai coefficienti, nello schema indicati con $a$: questi costituiscono i parametri della procedura di interpolazione del potenziale.
+Una caratteristica importante di questo metodo è che permette di ottenere l'energie di ogni atomo (e quindi l'energia totale) come funzioni analitica delle coordinate atomiche: le forze possono così essere determinate facilmente.
 }
 %
 \begin{column}{0.50\textwidth}
@@ -453,7 +460,7 @@ Informazioni sull'intorno atomico entro un certo raggio di \emph{cutoff} (terza 
   \end{itemize}
 }
 \note<1>{%
-Sono state condotte opportune verifiche di questo potenziale ed è si è concluso che esso descrive accuratamente le proprietà della fase liquida e di quella amorfa, come mostrato dalla figura. Inoltre, anche grandezze come il coefficiente di auto--diffusione del liquido a 300 K e la temperatura di fusione sono ben riprodotte dal potenziale utilizzato.
+Il potenziale utilizzato per il sistema \gete è stato costruito a partire da un insieme di 30 000 configurazioni e contiene circa 8 000 parametri.
 }
 %
 \only<2>{%
@@ -475,7 +482,7 @@ Sono state condotte opportune verifiche di questo potenziale ed è si è conclus
  \end{columns}
  }
  \note<2>{%
-Sono state condotte opportune verifiche di questo potenziale ed è si è concluso che esso descrive accuratamente le proprietà della fase liquida e di quella amorfa, come mostrato dalla figura. Inoltre, anche grandezze come il coefficiente di auto--diffusione del liquido a 300 K e la temperatura di fusione sono ben riprodotte dal potenziale utilizzato.
+Studi precedenti hanno confermato che il potenziale utilizzato descrive accuratamente le proprietà della fase liquida e di quella amorfa, come mostrato dei risultati in figura. Inoltre, anche grandezze come il coefficiente di auto--diffusione del liquido a 300 K e la temperatura di fusione sono ben riprodotte dal potenziale utilizzato.
 }
 \end{frame}
 
@@ -514,8 +521,8 @@ Interfaccia tra cristallo e liquido sotto--raffreddato
 }
 \note<1>{%
  In primo luogo, è stato studiato il processo di cristallizzazione considerando il \gete bulk. A questo scopo è stato utilizzato un modello (rappresentato in figura) in cui una porzione di \gete cristallino è posta all'interfaccia con la fase liquida sotto--raffreddata.
- In seguito, sono state svolte delle simulazioni a temperatura costante per intervalli di tempo dell'ordine delle centinaia di picosecondi.\\
- Durante ogni simulazione, il numero di atomi cristallini è stato calcolato secondo un parametro d'ordine ed si è monitorata l'evoluzione temporale dello spessore della sezione cristallina, indicata con L\ped{cris}.
+ Sono state svolte simulazioni per intervalli di tempo dell'ordine delle centinaia di pico secondi e a temperatura costante.\\
+ Durante ogni simulazione, il numero di atomi appartenenti alla fase cristallina è stato calcolato secondo il parametro d'ordine definito dalla formula e si è monitorata l'evoluzione temporale dello spessore della sezione cristallina, indicata con L\ped{cris}.
 }
 %
 \only<2>{%
@@ -567,6 +574,9 @@ Stima della temperatura di fusione nei nanofili\\[12pt]
 }
 
 \end{frame}
+\note{%
+ Il secondo aspetto
+}
 
 
 
@@ -614,7 +624,9 @@ Stima della temperatura di fusione nei nanofili\\[12pt]
   \end{table}
 
 \end{frame}
-
+\note{%
+ Lo studio svolto per il \gete bulk, è stato ripetuto per la cristallizzazione nei nanofili, svolgendo le simulazioni nell'intervallo di temperature tra 500 e 800 K. Qui sono riportati gli andamenti in funzione del tempo dello spessore dello slab cristallino alle temperature di 500 e 700. Il confronto dei risultati ottenuti per nanofilo e bulk è riportato nella tabella. Si noti come a 700 K vi sia una marcata differenza nelle velocità.
+}
 
 
 
@@ -632,6 +644,9 @@ Stima della temperatura di fusione nei nanofili\\[12pt]
   \end{description}  
   \end{center}
 \end{frame}
+\note{%
+ Secondo la teoria classica della nucleazione, la velocità di cristallizzazione in funzione della temperatura può essere descritta dalla funzione descritta in questa relazione. Compaiono 3 termini importanti: il coefficiente di auto--diffusione $D$, che dipende dalla temperatura; la distanza interatomica media $\lambda$ e la differenza di potenziale chimico $\Delta\mu$ tra la fase cristallina e quella liquida.
+}
 
 
 \begin{frame}{Coefficiente di auto--diffusione}
@@ -673,6 +688,9 @@ Stima della temperatura di fusione nei nanofili\\[12pt]
  \end{columns}
 
 \end{frame}
+\note{%
+ Il coefficiente di auto--diffusione è stato calcolato da simulazioni indipendenti (da quelle svolte per la cristallizzazione) utilizzando la relazione di Einstein. La diffusione è un processo attivato ed è stata estratta l'energia di attivazione per la diffusione nel nanofilo, da confrontare con il valore ottenuto nel bulk. Il grafico riporta l'andamento in funzione della temperatura del coefficiente $D$ per il nanofilo, insieme con i valori di $D$ calcolati per il bulk.
+}
 
 
 \begin{frame}{Differenza di potenziale chimico}
@@ -736,8 +754,9 @@ Stima della temperatura di fusione nei nanofili\\[12pt]
 
 	
 \end{frame}
-\note{In questo lavoro di tesi abbiamo studiato la cinetica di cristallizzazione in nanofili di gete, osservando una riduzione della temperatura di fusione da 1000 kelvin del gete bulk a circa 830 kelvin nei nanofili. Questa riduzione è responsabile della minore velocità di cristallizzazione osservata nei nanofili, che risulta essere al più un fattore 2 inferiore alla velocità calcolata nel bulk. Inoltre, l'andamento della velocità di crescita in funzione della temperatura è ben descritto dall'espressione classica.
-Possiamo perciò concludere che i risultati osservati suggeriscono che nanofili ultra--scalati fino a 8 nm di diametro possano essere efficacemente impiegati nelle celle PCM. 
+\note{%
+In questo lavoro di tesi abbiamo studiato la cinetica di cristallizzazione in nanofili di gete, osservando una riduzione della temperatura di fusione da 1000 kelvin del gete bulk a circa 830 kelvin nei nanofili. Abbiamo concluso che questa riduzione è responsabile della minore velocità di cristallizzazione osservata nei nanofili (che risulta essere al più un fattore 2 inferiore alla velocità calcolata nel bulk). Inoltre, l'andamento della velocità di crescita in funzione della temperatura è ben descritto dall'espressione classica.
+Da questi risultati, riteniamo che nanofili ultra--scalati fino a 8 nm di diametro possano essere efficacemente impiegati nelle celle PCM. 
 }
 
 
