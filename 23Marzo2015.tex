@@ -25,10 +25,10 @@
 
 \mode<presentation>
 {
-  \usetheme[compress]{Berlin}  
+  %\usetheme[compress]{Berlin}  
   %\usetheme{Berkeley}
   %\usecolortheme{sidebartab}
-  % or ...
+  \usetheme{Mainz}
   \setbeamercovered{dynamic}
   % or whatever (possibly just delete it)
   \usefonttheme{professionalfonts}
@@ -40,7 +40,7 @@
 \input{Preamble}
 
 %\setbeameroption{show notes on second screen}
-%\setbeameroption{show notes}
+\setbeameroption{show notes}
 
 %%% Layout di 4 pagine per foglio
 %\pgfpagesuselayout{4 on 1}[a4paper,border shrink=5mm,landscape]
@@ -81,9 +81,14 @@
 
 \begin{document}
 
+{%
+\setbeamertemplate{footline}{} % suppress number in titlepage
 \begin{frame}
   \titlepage
 \end{frame}
+}
+
+\addtocounter{framenumber}{-1} % resent frame counter
 
 %\begin{frame}{Outline}
 %  \tableofcontents
@@ -238,7 +243,7 @@ La fase di lettura della cella è svolta a bassa tensione, inferiore al valore d
 \textcolor{themecolor}{Micron}: primo dispositivo a 45~nm\\ %(Agrate)\\
 \end{frame}
 \note{%
-I dispositivi PCM sono già presenti sul mercato sin dal 2010 e nel 2011 è stato reso disponibile il primo telefono cellulare equipaggiato un con un dispositivo PCM prodotto da Micron.
+I dispositivi PCM sono già presenti sul mercato sin dal 2010 e nel 2011 è stato reso disponibile il primo telefono cellulare equipaggiato con un dispositivo PCM prodotto da Micron.
 }
 
 
@@ -261,12 +266,9 @@ I dispositivi PCM sono già presenti sul mercato sin dal 2010 e nel 2011 è stat
 \begin{frame}{La cristallizzazione}
 \only<1-2>{%
  \begin{exampleblock}{}
- La cristallizzazione determina la velocità di \emph{switching} nei dispositivi \\[3pt]
+ La cristallizzazione determina la velocità di \emph{switching} nei dispositivi
  \end{exampleblock}
-\vspace{0.5cm}
-\note<1>{%
- Si è visto come il processo alla base del funzionamento di un dispositivo PCM sia la transizione tra la fase cristallina e quella amorfa. In particolare, il fenomeno della cristallizzazione la rapidità con cui è possibile cambiare lo stato di una cella di memoria.
-}
+\vspace{.5cm}
 %\only<2>{%
 % \begin{alertblock}{}
 % La cinetica di cristallizzazione è di difficile approccio sperimentale\\[3pt]
@@ -274,7 +276,7 @@ I dispositivi PCM sono già presenti sul mercato sin dal 2010 e nel 2011 è stat
 %}
 \visible<2>{%
  \centering
- {\ev Teoria della nucleazione e crescita}\\[0.5cm]
+ {\bfseries Teoria della nucleazione e crescita}\\[0.5cm]
  \begin{columns}
   \begin{column}{0.5\textwidth}
    \centering
@@ -289,17 +291,26 @@ I dispositivi PCM sono già presenti sul mercato sin dal 2010 e nel 2011 è stat
  \end{columns}
  }
 }
+\note<2>{%
+ (PRIMA) Si è visto come il processo alla base del funzionamento di un dispositivo PCM sia la transizione tra la fase cristallina e quella amorfa. In particolare, il fenomeno della cristallizzazione determina la rapidità con cui è possibile cambiare lo stato di una cella di memoria.\\
+ (SECONDA) Nel processo di cristallizzazione possono essere distinte due fasi: la nucleazione, ossia la formazione di un germe cristallino all'interno di una matrice disordinata, e la crescita, ossia la progressione del fronte che separa la fase cristallina da quella amorfa. Durante una cristallizzazione questi due fenomeni possono manifestare andamenti in funzione della temperatura molto diversi; è infatti possibile che uno dei due meccanismi sia dominante sull'altro, e si può distinguere un processo di cristallizzazione controllato dalla nucleazione oppure dalla crescita.
+}
 %\vspace{.1cm}
 \only<3>{%
  \begin{alertblock}{Perché è interessante?}
-  \begin{itemize}
+  \begin{enumerate}
    \item Il meccanismo di cristallizzazione dipende dalla  dimensione della fase amorfa, dalla temperatura e dal materiale
-   \item Nelle PCM la fase amorfa è portata a $T$ molto maggiori di $T\ped{glass}$ (liquido sotto--raffreddato)
+   \item Nelle PCM la fase amorfa è portata a $T$ molto maggiori di $T\ped{glass}$ ({\bf liquido sotto--raffreddato})
    \item La cinetica di cristallizzazione può cambiare da \emph{bulk} a nanofili \\[3pt]
       $\Rightarrow\,T\ped{melt}\; \text{e}\; T\ped{glass}$ {\bf dipendono} dalle dimensioni
-  \end{itemize}
+  \end{enumerate}
  \end{alertblock}
  }
+ \note<3>{%
+ (TERZA) Perciò, è interessante studiare come la cristallizzazione dipenda dalle dimensioni della fase disordinata, dalla temperatura del sistema e dal materiale. Inoltre, nei dispositivi, durante il processo di SET la fase amorfa è portata a temperature molto maggiori della temperatura di transizione vetrosa e la cristallizzazione ha luogo in quella che è chiamata ``fase liquida sotto--raffreddata''. Infine, è interessante comprendere se la cinetica di cristallizzazione subisce effetti dovuti alla dimensionalità del sistema, passando dal materiale in bulk a quello nanostrutturato.
+ In questo lavoro, abbiamo studiato la cristallizzazione in nanofili costituiti dal materiale a cambiamento di fase \gete.
+}
+
 \end{frame}
 
 
@@ -316,9 +327,9 @@ I dispositivi PCM sono già presenti sul mercato sin dal 2010 e nel 2011 è stat
  \begin{columns}
   \begin{column}{0.4\textwidth}
       \begin{itemize}
-       \item<1-> Struttura cristallina {\ev trigonale} (fase $\alpha$) con cella elementare {\ev romboedrica}
-       \item<1-> Struttura cubica tipo \ce{NaCl} elongata lungo la $\langle 111 \rangle$
-       \item<2-> Parametri strutturali
+       \item Struttura cristallina {\ev trigonale} (fase $\alpha$) \\ Cella elementare {\ev romboedrica}
+       \item Struttura cubica tipo \ce{NaCl} elongata lungo la $\langle 111 \rangle$
+       \item Parametri strutturali
       %\onslide<3->{% 
        %\begin{itemize}
         %\item 
@@ -329,19 +340,22 @@ I dispositivi PCM sono già presenti sul mercato sin dal 2010 e nel 2011 è stat
         $x=\num{0.2366}$ \\[3pt] Ge: $(x,\,x,\,x)$ \\[3pt] Te: $(-x,\,-x,\,-x)$
        %\end{itemize}
        %}
-       \note<2>{%
-	 I parametri strutturali della struttura trigonale sono il passo reticolare $a$, l'angolo tra una coppia di vettori di base $\alpha$ e il parametro $x$ che assegna le posizioni nella cella elementare dei due atomi di Ge e Te. 
-	}
       \end{itemize}
   \end{column}
   \begin{column}{0.4\textwidth}
    \includegraphics[width=0.7\textwidth]{GeTe-cell}\\[12pt]
-   \includegraphics[width=\textwidth]{GeTe-bilayer}
+   \includegraphics[width=\textwidth]{GeTe-crystal-struct}
   \end{column}
 
  \end{columns}
 
 \end{frame}
+\note{%
+ La struttura cristallina del \gete, stabile a temperatura ambiente, è un reticolo cristallino trigonale, con una cella elementare romboedrica, mostrata in figura. Questa struttura può essere vista come la cella primitiva del reticolo cubico a facce centrate allungata lungo la direzione <111>.\\
+ I parametri strutturali della struttura trigonale sono il passo reticolare $a$, l'angolo tra una coppia di vettori di base $\alpha$ e il parametro interno $x$ che assegna le posizioni nella cella elementare dei due atomi di Ge e Te.
+}
+
+
 
 %\subsection{Nanofili}
 
@@ -363,10 +377,14 @@ I dispositivi PCM sono già presenti sul mercato sin dal 2010 e nel 2011 è stat
  \end{columns}
  \vspace{0.2cm}
  \centering
-\onslide<2->{%
+%\onslide<2->{%
  Simulazioni di {\ev dinamica molecolare} del processo di cristallizzazione% con potenziale interatomico
- }
+%}
 \end{frame}
+\note{%
+ Il sistema considerato in questo lavoro è un nanofilo di \gete cresciuto lungo la direzione cristallografica [110], osservata in alcuni studi sperimentali, e con un diametro pari a circa 8 nm. La cella di simulazione ha una lunghezza di 84.65 angstrom e contiene 16 540 atomi.\\
+ Il processo di cristallizzazione è stato studiato con simulazioni di dinamica molecolare. Poiché un numero di atomi così elevato rende inaccessibile un approccio 
+}
 
 
 
@@ -759,11 +777,11 @@ Possiamo perciò concludere che i risultati osservati suggeriscono che nanofili 
  \begin{equation*}
  	L\ped{cris}= N\ped{cris} \frac{d\ped{hkl}}{2 N\ped{surf}}	
  \end{equation*}
- \begin{itemize}
- 	\item $N\ped{cris}$ = numero di atomi cristallini appartenenti allo \emph{slab} al tempo $t$
- 	\item $d\ped{hkl}$ = distanza interplanare dei piani cristallini dello \emph{slab}
- 	\item $N\ped{surf}$ = numero di atomi nella superficie cristallina ideale
- \end{itemize}	
+ \begin{description}
+ 	\item [$N\ped{cris}$] numero di atomi cristallini appartenenti allo \emph{slab} al tempo $t$
+ 	\item [$d\ped{hkl}$] distanza interplanare dei piani cristallini dello \emph{slab}
+ 	\item [$N\ped{surf}$] numero di atomi nella superficie cristallina ideale
+ \end{description}	
 \end{frame}
 
 
